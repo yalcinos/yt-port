@@ -1,13 +1,16 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import WelcomeText from "./components/WelcomePage/WelcomeText";
 import NavBar from "./components/NavBar/NavBarContainer";
+import Container from "@material-ui/core/Container";
+
 function App() {
   return (
     <div>
       <NavBar />
-      <WelcomeText />
+      <Container>
+        <WelcomeText name={"Yalcin"} />
+      </Container>
     </div>
   );
 }
