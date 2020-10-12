@@ -1,4 +1,4 @@
-import { Grid, Typography } from "@material-ui/core";
+import { Grid, Typography, IconButton } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import React from "react";
 import FacebookIcon from "@material-ui/icons/Facebook";
@@ -18,9 +18,14 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Rockwell Nova",
   },
   socialIconStyle: {
+    color: "white",
     textAlign: "center",
   },
 }));
+
+const handleClick = (webSiteLink) => {
+  window.open(webSiteLink, "_blank");
+};
 const WelcomeText = (props) => {
   const classes = useStyles();
   return (
@@ -42,9 +47,30 @@ const WelcomeText = (props) => {
         </Grid>
         <Grid item xs={12}>
           <div className={classes.socialIconStyle}>
-            <FacebookIcon style={{ fontSize: 50, marginRight: "10px" }} />
-            <GitHubIcon style={{ fontSize: 50, marginRight: "10px" }} />
-            <LinkedInIcon style={{ fontSize: 50 }} />
+            <IconButton
+              className={classes.socialIconStyle}
+              onClick={(event) => {
+                handleClick("https://www.facebook.com/yalcin.tatar1");
+              }}
+            >
+              <FacebookIcon style={{ fontSize: 50, marginRight: "10px" }} />
+            </IconButton>
+            <IconButton
+              className={classes.socialIconStyle}
+              onClick={(event) => {
+                handleClick("https://github.com/yalcinos");
+              }}
+            >
+              <GitHubIcon style={{ fontSize: 50, marginRight: "10px" }} />
+            </IconButton>
+            <IconButton
+              className={classes.socialIconStyle}
+              onClick={(event) => {
+                handleClick("https://www.linkedin.com/in/yalcin-tatar/");
+              }}
+            >
+              <LinkedInIcon style={{ fontSize: 50, marginRight: "10px" }} />
+            </IconButton>
           </div>
         </Grid>
       </Grid>

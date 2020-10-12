@@ -1,7 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
-import Container from "@material-ui/core/Container";
+import { Link, HashRouter } from "react-router-dom";
 import Box from "@material-ui/core/Box";
 const useStyles = makeStyles({
   root: {
@@ -29,10 +29,15 @@ const NavBarContainer = () => {
         </Box>
         <div className={classes.flexMenu}>
           <Box m={1} marginLeft="10px">
-            About Me
+            <Button variant="contained">
+              <Link to="/about">About Me</Link>
+            </Button>
           </Box>
-          <Box m={1}>Portfolio</Box>
-          <Box m={1}>Contact Me</Box>
+          <Box m={1}>
+            <Button variant="contained">
+              <Link to="/portfolio">Portfolio</Link>
+            </Button>
+          </Box>
         </div>
       </Box>
     </div>

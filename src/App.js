@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { HashRouter, Switch, Route, Link } from "react-router-dom";
 import "./App.css";
 import WelcomeText from "./components/WelcomePage/WelcomeText";
 import NavBar from "./components/NavBar/NavBarContainer";
@@ -6,6 +7,9 @@ import Container from "@material-ui/core/Container";
 import { useDencrypt } from "use-dencrypt-effect";
 import Particles from "react-particles-js";
 import imgNode from "./assets/images/node-brands.svg";
+import { createBrowserHistory } from "history";
+import Portfolio from "./components/Portfolio/Portfolio";
+
 const values = ["Hello, I'm Yalcin !"];
 const headline = " Frontend Developer | Open-Source Enthusiast | Twin Brothrss";
 
@@ -24,29 +28,30 @@ function App() {
   }, []);
 
   return (
-    <div>
-      <Particles
-        style={{ position: "absolute" }}
-        params={{
-          particles: {
-            number: {
-              value: 80,
-            },
-            size: {
-              value: 3,
-            },
-          },
-          interactivity: {
-            events: {
-              onhover: {
-                enable: true,
-                mode: "repulse",
+    <HashRouter>
+      <div>
+        <Particles
+          style={{ position: "absolute" }}
+          params={{
+            particles: {
+              number: {
+                value: 80,
+              },
+              size: {
+                value: 3,
               },
             },
-          },
-        }}
-      />
-      {/* <Particles
+            interactivity: {
+              events: {
+                onhover: {
+                  enable: true,
+                  mode: "repulse",
+                },
+              },
+            },
+          }}
+        />
+        {/* <Particles
         style={{ position: "absolute" }}
         params={{
           particles: {
@@ -91,11 +96,17 @@ function App() {
           retina_detect: false,
         }}
       /> */}
-      <NavBar />
-      <Container>
-        <WelcomeText name={result} headLine={headline} />
-      </Container>
-    </div>
+        <NavBar />
+        <Container>
+          <Switch>
+            <Route exact path="/">
+              <WelcomeText name={result} headLine={headline} />
+            </Route>
+            <Route path="/portfolio" component={Portfolio} />
+          </Switch>
+        </Container>
+      </div>
+    </HashRouter>
   );
 }
 
