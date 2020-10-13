@@ -5,6 +5,7 @@ import FacebookIcon from "@material-ui/icons/Facebook";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import Typist from "react-typist";
+import Particles from "react-particles-js";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -30,6 +31,27 @@ const WelcomeText = (props) => {
   const classes = useStyles();
   return (
     <div className={classes.root}>
+      <Particles
+        style={{ position: "absolute" }}
+        params={{
+          particles: {
+            number: {
+              value: 80,
+            },
+            size: {
+              value: 3,
+            },
+          },
+          interactivity: {
+            events: {
+              onhover: {
+                enable: true,
+                mode: "repulse",
+              },
+            },
+          },
+        }}
+      />
       <Grid container>
         <Grid item xs={12}>
           <Typography variant="h1" className={classes.paper}>

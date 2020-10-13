@@ -1,0 +1,101 @@
+ [
+  {
+    "id": 1,
+    "date": "September 2020 - Present",
+    "eventName": "Fresh Graduated , YAY!",
+    "eventIcon": "",
+    "eventDetails": " I creadted several project with React, React-Native, Redux and Node.js. Now I am ready to find my dream job!",
+    "location": "Vancouver, Canada",
+    "technologies": ["Linux", "Bash Script", "RPA", "Oracle Weblogic"]
+  },
+  {
+    "id": 2,
+    "date": "May 2019 - August 2020",
+    "eventName": "Langara College",
+    "eventIcon": "",
+    "eventDetails": "After I worked as a DevOps engineer for almost 1 year, I left my job to pursue my career in web and mobile application problem in Langara College. ",
+    "location": "Vancouver, Canada",
+    "technologies": ["Linux", "Bash Script", "RPA", "Oracle Weblogic"]
+  },
+  {
+    "id": 3,
+    "date": "Jul 2018 - April2019",
+    "eventName": "Software Infrastructure Engineer in Accenture",
+    "eventIcon": "",
+    "eventDetails": "I gave consultancy to the biggest telecommunication company which is Turk Telekom for their production servers.",
+    "location": "Istanbul/Turkey",
+    "technologies": ["Linux", "Bash Script", "RPA", "Oracle Weblogic"]
+  },
+  {
+    "id": 4,
+    "date": "September 2017 - May 2018",
+    "eventName": "Graduated From Language School (ILAC)",
+    "eventIcon": "",
+    "eventDetails": "I studied at International Language of Canada for IELTS preperation and explored Canada.",
+    "location": "Vancouver, Canada",
+    "technologies": ["English", "IELTS"]
+  },
+  {
+    "id": 5,
+    "date": "July 2017 - August 2017",
+    "eventName": "Web Developer BootCamp in KolayIK",
+    "eventIcon": "",
+    "eventDetails": "After I graduated, I have selected the top 7 new graduate students in the bootcamp event in 2017. And I was invited to a Bootcamp which takes 2 months.",
+    "location": "Istanbul, Turkey",
+    "technologies": ["Angular.js", "HTML", "CSS", "PHP","Laravel"]
+  },
+  {
+    "id": 6,
+    "date": "May 2017",
+    "eventName": "Graduated From University",
+    "eventIcon": "",
+    "eventDetails": " I developed multiple applications with Java,PHP and also I also worked as a software engineer in a early-stage startups during studies around 7 months.",
+    "location": "Izmir,Turkey",
+    "technologies": ["Java", "PHP", "MySQL", "GIS"]
+  }, {
+    "id": 7,
+    "date": "Oct 2016 - May 2017",
+    "eventName": "Software Developer in a Startup",
+    "eventIcon": "",
+    "eventDetails": "I have worked in a startup company which is in early stage at the incubator center in our university campus",
+    "location": "Izmir Turkey",
+    "technologies": ["C#", "GIS", "GNSS", "Startup"]
+  },
+  {
+    "id": 8,
+    "date": "Jul 2016 - Aug 2016",
+    "eventName": "Software Engineer (Intern) in Pirelli Tyre",
+    "eventIcon": "",
+    "eventDetails": "Developed an ERP software engineer for Help Desk assistant for the company.",
+    "location": "Kocaeli, Turkey",
+    "technologies": ["C#", "ASP.NET", "SQL"]
+  },
+  {
+    "id": 9,
+    "date": "Aug 2015 - Sep 2015",
+    "eventName": "Software Development Engineer (Intern) in SabanciDx",
+    "eventIcon": "",
+    "eventDetails": "Created gym management application",
+    "location": "Kocaeli, Turkey",
+    "technologies": ["Java", "MySQL", "Spring", "Hibernate"]
+  },
+  {
+    "id": 9,
+    "date": "May 2013",
+    "eventName": "Graduated From Highschool",
+    "eventIcon": "",
+    "eventDetails": "",
+    "location": "Kocaeli, Turkey",
+    "technologies": ["Java"]
+  },
+  {
+    "id": 9,
+    "date": "16 Nov 1993",
+    "eventName": "Twins are borned !",
+    "eventIcon": "",
+    "eventDetails": "",
+    "location": "Istanbul, Turkey",
+    "technologies": ["Java"]
+  }
+ 
+]
