@@ -12,6 +12,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     marginTop: "100px",
     color: "white",
+    // height: "100vh",
   },
   paper: {
     padding: theme.spacing(2),
@@ -21,6 +22,9 @@ const useStyles = makeStyles((theme) => ({
   socialIconStyle: {
     color: "white",
     textAlign: "center",
+  },
+  trial: {
+    height: "77vh",
   },
 }));
 
@@ -32,14 +36,15 @@ const WelcomeText = (props) => {
   return (
     <div className={classes.root}>
       <Particles
+        height="77vh"
         style={{ position: "absolute" }}
         params={{
           particles: {
             number: {
-              value: 80,
+              value: 40,
             },
             size: {
-              value: 3,
+              value: 2,
             },
           },
           interactivity: {

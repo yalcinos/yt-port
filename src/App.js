@@ -6,6 +6,7 @@ import NavBar from "./components/NavBar/NavBarContainer";
 import Container from "@material-ui/core/Container";
 import { useDencrypt } from "use-dencrypt-effect";
 import imgNode from "./assets/images/node-brands.svg";
+import Particles from "react-particles-js";
 import Portfolio from "./components/Portfolio/Portfolio";
 
 const values = ["Hello, I'm Yalcin !"];
@@ -29,14 +30,12 @@ function App() {
     <HashRouter>
       <div>
         <NavBar />
-        <Container>
-          <Switch>
-            <Route exact path="/">
-              <WelcomeText name={result} headLine={headline} />
-            </Route>
-            <Route path="/portfolio" component={Portfolio} />
-          </Switch>
-        </Container>
+        <Switch>
+          <Route exact path="/">
+            <WelcomeText name={result} headLine={headline} />
+          </Route>
+          <Route path="/portfolio" component={Portfolio} />
+        </Switch>
       </div>
     </HashRouter>
   );
