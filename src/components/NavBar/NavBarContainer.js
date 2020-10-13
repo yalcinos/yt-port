@@ -14,8 +14,10 @@ const useStyles = makeStyles({
   },
   flexMenu: {
     display: "inherit",
-    marginLeft: "60%",
-    marginRight: "10%",
+    marginRight: "5vw",
+  },
+  link: {
+    textDecoration: "none",
   },
 });
 
@@ -23,19 +25,23 @@ const NavBarContainer = () => {
   const classes = useStyles();
   return (
     <div className={classes.root}>
-      <Box display="flex" flexWrap="nowrap" p={1}>
-        <Box m={1} alignSelf="flex-start">
+      <Box display="flex" flexWrap="nowrap" justifyContent="flex-end" p={1}>
+        <Box m={1} alignSelf="flex-start" marginRight="auto">
           Y
         </Box>
         <div className={classes.flexMenu}>
           <Box m={1} marginLeft="10px">
             <Button variant="contained">
-              <Link to="/about">About Me</Link>
+              <Link className={classes.link} to="/about">
+                About Me
+              </Link>
             </Button>
           </Box>
           <Box m={1}>
             <Button variant="contained">
-              <Link to="/portfolio">Portfolio</Link>
+              <Link className={classes.link} to="/portfolio">
+                Portfolio
+              </Link>
             </Button>
           </Box>
         </div>
