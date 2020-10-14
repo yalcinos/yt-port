@@ -4,7 +4,7 @@ import "./App.css";
 import WelcomeText from "./components/WelcomePage/WelcomeText";
 import NavBar from "./components/NavBar/NavBarContainer";
 import { useDencrypt } from "use-dencrypt-effect";
-import Portfolio from "./components/Portfolio/Portfolio";
+import AboutMe from "./components/About-me/AboutMe";
 
 const values = ["HELLO, I'M YALCIN !"];
 const headline = " Frontend Developer | Open-Source Enthusiast | Twin Brothrss";
@@ -31,7 +31,7 @@ function App() {
           <Route exact path="/">
             <WelcomeText name={result} headLine={headline} />
           </Route>
-          <Route path="/portfolio" component={Portfolio} />
+          <Route path="/about me" component={AboutMe} />
         </Switch>
       </div>
     </HashRouter>

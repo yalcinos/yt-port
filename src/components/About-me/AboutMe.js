@@ -21,14 +21,14 @@ import SchoolIcon from "@material-ui/icons/School";
 
 // console.log(portfolioData);
 
-const Portfolio = () => {
+const AboutMe = () => {
   const [userData, setUserData] = useState(portfolioData);
   const themeColor = [
     "#05386B",
     "#ea9438",
     "#d7385e",
     "#000000",
-    "#b17373",
+    "#de2b2b",
     "#335d2d",
     "#590995",
     "#03c4a1",
@@ -58,7 +58,7 @@ const Portfolio = () => {
               className="vertical-timeline-element--work"
               contentStyle={{ background: themeColor[index], color: "#edf5e1" }}
               contentArrowStyle={{
-                borderRight: "7px solid  #05386B",
+                borderRight: `7px solid  ${themeColor[index]}`,
               }}
               icon={React.createElement(EventIcons[index])}
               date={event.date}
@@ -71,11 +71,16 @@ const Portfolio = () => {
                 {event.location}
               </h5>
               <p>{event.eventDetails}</p>
-              {event.technologies.map((skill) => {
-                return (
-                  <Chip label={skill} style={{ backgroundColor: "#edf5e1" }} />
-                );
-              })}
+              {event.technologies.length === 0
+                ? null
+                : event.technologies.map((skill) => {
+                    return (
+                      <Chip
+                        label={skill}
+                        style={{ backgroundColor: "#edf5e1" }}
+                      />
+                    );
+                  })}
             </VerticalTimelineElement>
           );
         })}
@@ -83,4 +88,4 @@ const Portfolio = () => {
     </div>
   );
 };
-export default Portfolio;
+export default AboutMe;

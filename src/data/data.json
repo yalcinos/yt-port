@@ -8,7 +8,7 @@
     "icon": "",
     "eventDetails": " I created several project with React, React-Native, Redux and Node.js. Now I am ready to find my dream job!",
     "location": "Vancouver, Canada",
-    "technologies": ["Linux", "Bash Script", "RPA", "Oracle Weblogic"]
+    "technologies": []
   },
   {
     "id": 2,
@@ -17,7 +17,7 @@
     "eventIcon": "",
     "eventDetails": "After I worked as a DevOps engineer for almost 1 year, I left my job to pursue my career in web and mobile application problem in Langara College. ",
     "location": "Vancouver, Canada",
-    "technologies": ["Linux", "Bash Script", "RPA", "Oracle Weblogic"]
+    "technologies": ["React.js", "Redux", "React-Native", "MySQL", "Node.js"]
   },
   {
     "id": 3,
@@ -61,7 +61,7 @@
     "eventIcon": "",
     "eventDetails": "I have worked in a startup company which is in early stage at the incubator center in our university campus",
     "location": "Izmir Turkey",
-    "technologies": ["C#", "GIS", "GNSS", "Startup"]
+    "technologies": ["C#", "GIS", "GNSS"]
   },
   {
     "id": 8,
@@ -88,7 +88,7 @@
     "eventIcon": "",
     "eventDetails": "",
     "location": "Kocaeli, Turkey",
-    "technologies": ["Java"]
+    "technologies": []
   },
   {
     "id": 9,
@@ -97,7 +97,7 @@
     "eventIcon": "",
     "eventDetails": "",
     "location": "Istanbul, Turkey",
-    "technologies": ["Java"]
+    "technologies": []
   }
  
 ]
