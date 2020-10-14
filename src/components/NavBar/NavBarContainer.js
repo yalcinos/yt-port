@@ -33,7 +33,7 @@ const useStyles = makeStyles({
       boxShadow: "7px 10px 28px 1px rgba(0, 0, 0, 0.24)",
     },
     "&:active": {
-      boxShadow: "7px 6px 10px 1px rgba(0, 0, 0, 0.24)",
+      boxShadow: "7px 6px 15px 1px rgba(0, 0, 0, 0.24)",
       transform: "scale(0.97)",
     },
   },
