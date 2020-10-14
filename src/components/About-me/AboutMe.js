@@ -4,8 +4,7 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-import { DiReact } from "react-icons/di";
-import { MdWork, MdCode } from "react-icons/md";
+import { MdCode } from "react-icons/md";
 import { GiNewBorn } from "react-icons/gi";
 import {
   FaStudiovinari,
@@ -14,12 +13,12 @@ import {
   FaLightbulb,
   FaUniversity,
   FaUserGraduate,
+  FaStar,
 } from "react-icons/fa";
 import "react-vertical-timeline-component/style.min.css";
 import portfolioData from "../../data/data.json";
 import SchoolIcon from "@material-ui/icons/School";
-
-// console.log(portfolioData);
+import "../../App.css";
 
 const AboutMe = () => {
   const [userData, setUserData] = useState(portfolioData);
@@ -62,6 +61,7 @@ const AboutMe = () => {
               }}
               icon={React.createElement(EventIcons[index])}
               date={event.date}
+              dateClassName="timeline-date-style"
               iconStyle={{ background: themeColor[index], color: "#edf5e1" }}
             >
               <h3 className="vertical-timeline-element-title">

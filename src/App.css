@@ -26,6 +26,10 @@
 .canvas-style {
   height: 77vh;
 }
+.timeline-date-style {
+  color: #05386b;
+  font-weight: bolder;
+}
 
 @keyframes App-logo-spin {
   from {
