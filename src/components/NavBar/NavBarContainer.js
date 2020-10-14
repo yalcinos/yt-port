@@ -21,6 +21,10 @@ const useStyles = makeStyles({
     textDecoration: "none",
     color: "white",
   },
+  linkLogo: {
+    textDecoration: "none",
+    color: "#05386B",
+  },
   button: {
     fontFamily: "Audiowide",
     backgroundColor: "#05386B",
@@ -33,7 +37,9 @@ const NavBarContainer = () => {
     <div className={classes.root}>
       <Box display="flex" flexWrap="nowrap" justifyContent="flex-end" p={1}>
         <Box m={1} alignSelf="flex-start" marginRight="auto" marginLeft="2vw">
-          Y
+          <Link className={classes.linkLogo} to="/">
+            Y
+          </Link>
         </Box>
         <div className={classes.flexMenu}>
           <Box m={1} marginLeft="10px">

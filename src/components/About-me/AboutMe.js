@@ -71,16 +71,13 @@ const AboutMe = () => {
                 {event.location}
               </h5>
               <p>{event.eventDetails}</p>
-              {event.technologies.length === 0
-                ? null
-                : event.technologies.map((skill) => {
-                    return (
-                      <Chip
-                        label={skill}
-                        style={{ backgroundColor: "#edf5e1" }}
-                      />
-                    );
-                  })}
+              <div className="tag-style">
+                {event.technologies.length === 0
+                  ? null
+                  : event.technologies.map((skill) => {
+                      return <Chip label={skill} />;
+                    })}
+              </div>
             </VerticalTimelineElement>
           );
         })}

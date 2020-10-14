@@ -7,7 +7,8 @@ import { useDencrypt } from "use-dencrypt-effect";
 import AboutMe from "./components/About-me/AboutMe";
 import Portfolio from "./components/Portfolio/Portfolio";
 const values = ["HELLO, I'M YALCIN !"];
-const headline = " Frontend Developer | Open-Source Enthusiast | Twin Brothrss";
+const headline =
+  " Frontend Developer | Open-Source Enthusiast | Have Twin Sishei";
 
 function App() {
   const { result, dencrypt } = useDencrypt();

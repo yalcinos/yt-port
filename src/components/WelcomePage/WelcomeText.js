@@ -12,7 +12,6 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     marginTop: "100px",
     color: "#05386B",
-    // height: "100vh",
   },
   paper: {
     padding: theme.spacing(2),
@@ -108,7 +107,7 @@ const WelcomeText = (props) => {
             <Typist cursor={{ hideWhenDone: "false" }}>
               {props.headLine}
               <Typist.Backspace count={3} delay={200} />
-              <span>ers</span>
+              <span>ter</span>
             </Typist>
           </Typography>
         </Grid>

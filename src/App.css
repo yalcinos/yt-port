@@ -25,10 +25,27 @@
 }
 .canvas-style {
   height: 77vh;
+  margin-right: 2vw;
 }
 .timeline-date-style {
   color: #05386b;
   font-weight: bolder;
+}
+.tag-style {
+  margin-top: 1vh;
+}
+.tag-style > div {
+  margin-right: 1vw;
+}
+@media only screen and (max-width: 1169px) {
+  .timeline-date-style {
+    font-weight: bolder;
+    color: white;
+  }
+  .tag-style > div {
+    margin-top: 1vh;
+    margin-right: 1vw;
+  }
 }
 
 @keyframes App-logo-spin {
