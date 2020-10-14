@@ -1,7 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
-import { Link, HashRouter } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Box from "@material-ui/core/Box";
 const useStyles = makeStyles({
   root: {
@@ -28,6 +28,14 @@ const useStyles = makeStyles({
   button: {
     fontFamily: "Audiowide",
     backgroundColor: "#05386B",
+    "&:hover": {
+      backgroundColor: "#092d50",
+      boxShadow: "7px 10px 28px 1px rgba(0, 0, 0, 0.24)",
+    },
+    "&:active": {
+      boxShadow: "7px 6px 10px 1px rgba(0, 0, 0, 0.24)",
+      transform: "scale(0.97)",
+    },
   },
 });
 

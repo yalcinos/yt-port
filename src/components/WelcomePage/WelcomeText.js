@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
 
   [theme.breakpoints.down("sm")]: {
     helloMessage: {
-      fontSize: "5rem",
+      fontSize: "4.6rem",
     },
   },
 }));

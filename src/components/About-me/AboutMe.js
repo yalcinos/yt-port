@@ -13,7 +13,7 @@ import {
   FaLightbulb,
   FaUniversity,
   FaUserGraduate,
-  FaStar,
+  FaHeart,
 } from "react-icons/fa";
 import "react-vertical-timeline-component/style.min.css";
 import portfolioData from "../../data/data.json";
