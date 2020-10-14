@@ -11,16 +11,16 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     marginTop: "100px",
-    color: "white",
+    color: "#05386B",
     // height: "100vh",
   },
   paper: {
     padding: theme.spacing(2),
     textAlign: "center",
-    fontFamily: "Rockwell Nova",
+    fontFamily: "Indie Flower",
   },
   socialIconStyle: {
-    color: "white",
+    color: "#05386B",
     textAlign: "center",
   },
   trial: {
@@ -40,18 +40,54 @@ const WelcomeText = (props) => {
         style={{ position: "absolute" }}
         params={{
           particles: {
+            color: {
+              value: "#05386B",
+            },
             number: {
-              value: 40,
+              value: 160,
+              density: {
+                enable: false,
+              },
             },
             size: {
-              value: 2,
+              value: 3,
+              random: true,
+              anim: {
+                speed: 4,
+                size_min: 0.3,
+              },
+            },
+            line_linked: {
+              enable: false,
+            },
+            move: {
+              random: true,
+              speed: 1,
+              direction: "top",
+              out_mode: "out",
             },
           },
           interactivity: {
             events: {
               onhover: {
                 enable: true,
+                mode: "bubble",
+              },
+              onclick: {
+                enable: true,
                 mode: "repulse",
+              },
+            },
+            modes: {
+              bubble: {
+                distance: 250,
+                duration: 2,
+                size: 0,
+                opacity: 0,
+              },
+              repulse: {
+                distance: 400,
+                duration: 4,
               },
             },
           },

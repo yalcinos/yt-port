@@ -9,7 +9,7 @@ import imgNode from "./assets/images/node-brands.svg";
 import Particles from "react-particles-js";
 import Portfolio from "./components/Portfolio/Portfolio";
 
-const values = ["Hello, I'm Yalcin !"];
+const values = ["HELLO, I'M YALCIN !"];
 const headline = " Frontend Developer | Open-Source Enthusiast | Twin Brothrss";
 
 function App() {

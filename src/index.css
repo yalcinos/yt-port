@@ -9,7 +9,7 @@ body {
 }
 #root {
   min-height: 100vh;
-  background: linear-gradient(45deg, #3a6186 30%, #89253e 90%);
+  background: linear-gradient(45deg, #379683 30%, #5cdb95 80%);
 }
 
 code {
