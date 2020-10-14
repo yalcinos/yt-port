@@ -25,6 +25,17 @@ const useStyles = makeStyles((theme) => ({
   trial: {
     height: "77vh",
   },
+  helloMessage: {
+    padding: theme.spacing(2),
+    textAlign: "center",
+    fontFamily: "Bungee Inline",
+  },
+
+  [theme.breakpoints.down("sm")]: {
+    helloMessage: {
+      fontSize: "5rem",
+    },
+  },
 }));
 
 const handleClick = (webSiteLink) => {
@@ -94,11 +105,7 @@ const WelcomeText = (props) => {
       />
       <Grid container>
         <Grid item xs={12}>
-          <Typography
-            variant="h1"
-            className={classes.paper}
-            style={{ fontFamily: "Bungee Inline" }}
-          >
+          <Typography variant="h1" className={classes.helloMessage}>
             {props.name}
           </Typography>
         </Grid>
