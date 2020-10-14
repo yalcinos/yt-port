@@ -95,7 +95,11 @@ const WelcomeText = (props) => {
       />
       <Grid container>
         <Grid item xs={12}>
-          <Typography variant="h1" className={classes.paper}>
+          <Typography
+            variant="h1"
+            className={classes.paper}
+            style={{ fontFamily: "Bungee Inline" }}
+          >
             {props.name}
           </Typography>
         </Grid>

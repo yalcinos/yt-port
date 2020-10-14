@@ -5,7 +5,7 @@ import { Link, HashRouter } from "react-router-dom";
 import Box from "@material-ui/core/Box";
 const useStyles = makeStyles({
   root: {
-    fontFamily: "Bungee Inline",
+    fontFamily: "Audiowide",
     border: 0,
     borderRadius: 3,
     color: "#05386B",
@@ -22,6 +22,7 @@ const useStyles = makeStyles({
     color: "white",
   },
   button: {
+    fontFamily: "Audiowide",
     backgroundColor: "#05386B",
   },
 });
@@ -31,7 +32,7 @@ const NavBarContainer = () => {
   return (
     <div className={classes.root}>
       <Box display="flex" flexWrap="nowrap" justifyContent="flex-end" p={1}>
-        <Box m={1} alignSelf="flex-start" marginRight="auto">
+        <Box m={1} alignSelf="flex-start" marginRight="auto" marginLeft="2vw">
           Y
         </Box>
         <div className={classes.flexMenu}>

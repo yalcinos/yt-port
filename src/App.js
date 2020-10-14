@@ -1,12 +1,9 @@
 import React, { useEffect } from "react";
-import { HashRouter, Switch, Route, Link } from "react-router-dom";
+import { HashRouter, Switch, Route } from "react-router-dom";
 import "./App.css";
 import WelcomeText from "./components/WelcomePage/WelcomeText";
 import NavBar from "./components/NavBar/NavBarContainer";
-import Container from "@material-ui/core/Container";
 import { useDencrypt } from "use-dencrypt-effect";
-import imgNode from "./assets/images/node-brands.svg";
-import Particles from "react-particles-js";
 import Portfolio from "./components/Portfolio/Portfolio";
 
 const values = ["HELLO, I'M YALCIN !"];

@@ -4,7 +4,9 @@
     "date": "September 2020 - Present",
     "eventName": "Fresh Graduated , YAY!",
     "eventIcon": "",
-    "eventDetails": " I creadted several project with React, React-Native, Redux and Node.js. Now I am ready to find my dream job!",
+    "cardColor": "",
+    "icon": "",
+    "eventDetails": " I created several project with React, React-Native, Redux and Node.js. Now I am ready to find my dream job!",
     "location": "Vancouver, Canada",
     "technologies": ["Linux", "Bash Script", "RPA", "Oracle Weblogic"]
   },
