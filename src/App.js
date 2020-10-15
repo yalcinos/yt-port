@@ -7,7 +7,7 @@ import { useDencrypt } from "use-dencrypt-effect";
 import AboutMe from "./components/About-me/AboutMe";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Footer from "./components/Footer/Footer";
-
+import Trial from "./components/Portfolio/PortfolioGallery";
 const values = ["HELLO, I'M YALCIN !"];
 const headline =
   " Frontend Developer | Open-Source Enthusiast | Have Twin Sishei";
@@ -35,7 +35,7 @@ function App() {
             <WelcomeText name={result} headLine={headline} />
           </Route>
           <Route path="/about me" component={AboutMe} />
-          <Route path="/portfolio" component={Portfolio} />
+          <Route path="/portfolio" component={Trial} />
         </Switch>
         {/* <Footer /> */}
       </div>

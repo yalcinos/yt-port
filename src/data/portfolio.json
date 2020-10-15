@@ -26,5 +26,19 @@
         "projectDetails": "Coming Soon!...",
         "location": "Vancouver, Canada",
         "technologies": ["React-Native", "Material UI"]
+    },
+    {   "id": 5,
+        "projectName": "Kovan3",
+        "images": [],
+        "projectDetails": "Coming Soon!...",
+        "location": "Vancouver, Canada",
+        "technologies": ["React-Native", "Material UI"]
+    },
+    {   "id": 6,
+        "projectName": "Kovan3",
+        "images": [],
+        "projectDetails": "Coming Soon!...",
+        "location": "Vancouver, Canada",
+        "technologies": ["React-Native", "Material UI"]
     }
 ]
