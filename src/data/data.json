@@ -11,7 +11,7 @@
   {
     "id": 2,
     "date": "May 2019 - August 2020",
-    "eventName": "Langara College",
+    "eventName": "Post Degree Diploma at Langara College",
     "eventDetails": "After I worked as a DevOps engineer for almost 1 year, I left my job to pursue my career in web and mobile application program at Langara College.",
     "location": "Vancouver, Canada",
     "technologies": ["React.js", "Redux", "React-Native", "MySQL", "Node.js"]
@@ -19,8 +19,8 @@
   {
     "id": 3,
     "date": "Jul 2018 - April2019",
-    "eventName": "Software Infrastructure Engineer in Accenture",
-    "eventDetails": "I gave consultancy to the biggest telecommunication company which is Turk Telekom for their production environment..",
+    "eventName": "Software Infrastructure Engineer at Accenture",
+    "eventDetails": "I have worked as a full-time consultant for giving support to the production servers at the biggest telecommunication company which is Turk Telekom.",
     "location": "Istanbul, Turkey",
     "technologies": ["Linux", "Bash Script", "RPA", "Oracle Weblogic"]
   },
@@ -35,6 +35,7 @@
   {
     "id": 5,
     "date": "July 2017 - August 2017",
+    "eventName": "Bootcamp at KolayHR",
     "eventDetails": "After I graduated, I have selected the top 7 new graduate students in the bootcamp event in 2017. And I was invited to a Bootcamp which takes 2 months.",
     "location": "Istanbul, Turkey",
     "technologies": ["Angular.js", "HTML", "CSS", "PHP","Laravel"]
@@ -44,20 +45,20 @@
     "date": "May 2017",
     "eventName": "Graduated From University",
     "eventDetails": "I developed applications with Java, PHP, C#.",
-    "location": "Izmir,Turkey",
+    "location": "Izmir, Turkey",
     "technologies": ["Java", "PHP", "MySQL", "GIS"]
   }, {
     "id": 7,
     "date": "Oct 2016 - May 2017",
-    "eventName": "Software Developer in a Startup",
+    "eventName": "Software Developer at Startup company",
     "eventDetails": "I have worked as a developer for around 7 months in a startup company that is in early-stage at the incubator center on our university campus.",
-    "location": "Izmir Turkey",
+    "location": "Izmir, Turkey",
     "technologies": ["C#", "GIS", "GNSS"]
   },
   {
     "id": 8,
     "date": "Jul 2016 - Aug 2016",
-    "eventName": "Software Engineer (Intern) in Pirelli Tyre",
+    "eventName": "Software Developer (Intern) at Pirelli Tyre",
     "eventDetails": "Developed an ERP software engineer for Help Desk assistant for the company.",
     "location": "Kocaeli, Turkey",
     "technologies": ["C#", "ASP.NET", "SQL"]
@@ -65,14 +66,14 @@
   {
     "id": 9,
     "date": "Aug 2015 - Sep 2015",
-    "eventName": "Software Development Engineer (Intern) in SabanciDx",
+    "eventName": "Software Developer (Intern) at SabanciDx",
     "eventDetails": "Created gym management application",
     "location": "Kocaeli, Turkey",
     "technologies": ["Java", "MySQL", "Spring", "Hibernate"]
   },
   {
     "id": 9,
-    "date": "May 2013",
+    "date": "May 2012",
     "eventName": "Graduated From Highschool",
     "eventDetails": "",
     "location": "Kocaeli, Turkey",

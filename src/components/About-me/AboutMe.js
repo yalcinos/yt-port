@@ -18,6 +18,7 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import portfolioData from "../../data/data.json";
 import SchoolIcon from "@material-ui/icons/School";
+import Divider from "@material-ui/core/Divider";
 import "../../App.css";
 
 const AboutMe = () => {
@@ -72,6 +73,7 @@ const AboutMe = () => {
               </h5>
               <p>{event.eventDetails}</p>
               <div className="tag-style">
+                <h5 className="tech-div-style">Technologies;</h5>
                 {event.technologies.length === 0
                   ? null
                   : event.technologies.map((skill) => {

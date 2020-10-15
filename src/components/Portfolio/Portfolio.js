@@ -21,9 +21,9 @@ import reduxLogo from "../../assets/images/icons8-redux.svg";
 import cssLogo from "../../assets/images/icons8-css3.svg";
 import images1 from "../../assets/images/kovan/1.png";
 import data from "../../data/portfolio.json";
+import Gallery from "react-grid-gallery";
 import CircularProgress from "@material-ui/core/CircularProgress";
 
-console.log(images1);
 const useStyles = makeStyles({
   root: {
     width: "80vw",
@@ -46,11 +46,30 @@ const Portfolio = () => {
   const [portfolioData, setPortfolioData] = useState();
   const [image, setImage] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-
+  console.log(image);
   useEffect(() => {
     setPortfolioData(data);
     setIsLoading(false);
+    loadImage("kovan");
   }, []);
+
+  const loadImage = (imageName) => {
+    let imgArr = [];
+    if (imageName === "kovan") {
+      for (let i = 1; i <= 9; i++) {
+        import(`../../assets/images/${imageName}/1.png`).then((image) => {
+          imgArr.push({
+            src: image.default,
+            thumbnail: image.default,
+            thumbnailWidth: 150,
+            thumbnailHeight: 250,
+            caption: "Choose Group",
+          });
+        });
+      }
+      setImage(imgArr);
+    }
+  };
 
   return (
     <Grid container className={classes.root} spacing={2}>
@@ -59,7 +78,7 @@ const Portfolio = () => {
       ) : (
         portfolioData.map((item, index) => {
           return (
-            <Grid item xs={12} justify="center">
+            <Grid item xs={12}>
               <Accordion>
                 <AccordionSummary
                   className={classes.accordionItem}
@@ -77,6 +96,11 @@ const Portfolio = () => {
                 </AccordionSummary>
                 <AccordionDetails>
                   <Typography>{item.projectDetails}</Typography>
+                  <Gallery
+                    images={image}
+                    backdropClosesModal={true}
+                    margin={8}
+                  />
                 </AccordionDetails>
               </Accordion>
             </Grid>
