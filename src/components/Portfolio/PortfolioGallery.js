@@ -11,9 +11,9 @@ import {
   Button,
   Typography,
 } from "@material-ui/core";
+import { MdCode } from "react-icons/md";
+import { MdLiveTv } from "react-icons/md";
 import { red } from "@material-ui/core/colors";
-import FavoriteIcon from "@material-ui/icons/Favorite";
-import ShareIcon from "@material-ui/icons/Share";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import ImageGallery from "./ImageGallery";
 import portfoliosData from "../../data/portfolio.json";
@@ -26,6 +26,7 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "3vh",
     backgroundColor: "#05386B",
     color: "#ffff",
+    marginBottom: "2vh",
   },
   gridStyle: {
     flexGrow: 1,
@@ -48,6 +49,9 @@ const useStyles = makeStyles((theme) => ({
   },
   avatar: {
     backgroundColor: red[500],
+  },
+  buttonContainer: {
+    marginRight: "1vw",
   },
 }));
 
@@ -149,12 +153,25 @@ const PortfolioGallery = () => {
                   {poItem.githubLink === "" ||
                   poItem.githubLink === "" ? null : (
                     <Button
+                      className={classes.buttonContainer}
                       variant="contained"
+                      startIcon={<MdCode />}
                       onClick={(event) => {
                         handleClick(poItem.githubLink);
                       }}
                     >
                       Source
+                    </Button>
+                  )}
+                  {poItem.liveDemo === "" || poItem.liveDemo === "" ? null : (
+                    <Button
+                      variant="contained"
+                      startIcon={<MdLiveTv />}
+                      onClick={(event) => {
+                        handleClick(poItem.liveDemo);
+                      }}
+                    >
+                      Demo
                     </Button>
                   )}
 
@@ -180,7 +197,9 @@ const PortfolioGallery = () => {
                             return <Chip label={skill} key={index} />;
                           })}
                     </div>
-                    <Typography paragraph>ScreenShots:</Typography>
+                    <Typography style={{ marginTop: "1vh" }} paragraph>
+                      ScreenShots:
+                    </Typography>
                     {poItem.projectName === "Kovan" ? (
                       <ImageGallery imageList={imageList} />
                     ) : poItem.projectName === "Taskiton" ? (

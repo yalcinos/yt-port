@@ -34,8 +34,9 @@
 .tag-style {
   margin-top: 1vh;
 }
-.tag-style-project {
-  /* margin-top: 1vh; */
+.tag-style-project > * {
+  margin-right: 1vw;
+  margin-top: 1vh;
 }
 .tag-style > div {
   margin-right: 1vw;

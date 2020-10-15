@@ -4,7 +4,7 @@
         "projectDetails": "Plugins based household management mobile application to manage all kinds of small groups effectively and make your life easier",
         "location": "Vancouver, Canada",
         "technologies": ["React-Native", "NativeBase UI", "FireBase", "Node.js", "MySQL", "Expo"],
-        "githubLink" : "",
+        "githubLink" : "https://github.com/bivt-cap/bivt-frontend",
         "liveDemo": ""
     },
     {   "id": 2,
@@ -12,7 +12,7 @@
         "projectDetails": "Kanban-Base web application to manage the business and personal tasks effectively and communicate with colleagues with Real-Time chat.",
         "location": "Vancouver, Canada",
         "technologies": ["React.js", "Node.js","Material UI", "Chart.js", "Socket.io", "MySQL"],
-        "githubLink" : "",
+        "githubLink" : "https://github.com/Taskiton/taskiton",
         "liveDemo": ""
     },
     {   "id": 3,
@@ -20,7 +20,7 @@
         "projectDetails": "Social driven responsive mobile application that helps to share your memories with other people and explore new places by using a gamified map",
         "location": "Vancouver, Canada",
         "technologies": ["JavaScript", "Material UI", "Node.js", "Framework7","Cordova"],
-        "githubLink" : "",
+        "githubLink" : "https://github.com/OdysseyApp/OdysseyCordova",
         "liveDemo": ""
     },
     {   "id": 4,
@@ -29,7 +29,7 @@
         "projectDetails": "The application measure and analysis employee motivation by questions. Analyze the employees' motivation by using their answers. ",
         "location": "Vancouver, Canada",
         "technologies": ["Angular.js", "PHP(Laravel)", "MySQL"],
-        "githubLink" : "",
+        "githubLink" : "https://github.com/OdysseyApp/OdysseyCordova",
         "liveDemo": ""
     },
     {   "id": 5,
@@ -37,7 +37,7 @@
         "projectDetails": "List movies and TV Shows with The Movie Database API using React.js",
         "location": "Vancouver, Canada",
         "technologies": ["React.js", "Material UI", "Movie DB API"],
-        "githubLink" : "",
+        "githubLink" : "https://github.com/yalcinos/react-movies-list",
         "liveDemo": ""
     },
     {   "id": 6,
@@ -53,7 +53,7 @@
         "projectDetails": "A color guessing game. A JavaScript-based application to remind you of RGB color models.",
         "location": "Vancouver, Canada",
         "technologies": ["JavaScript", "HTML", "CSS"],
-        "githubLink" : "",
+        "githubLink" : "https://github.com/yalcinos/color-guess-game",
         "liveDemo": ""
     }
 ]
