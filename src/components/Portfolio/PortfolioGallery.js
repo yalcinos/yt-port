@@ -18,6 +18,8 @@ const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 345,
     marginTop: "3vh",
+    backgroundColor: "#05386B",
+    color: "#ffff",
   },
   gridStyle: {
     flexGrow: 1,
@@ -47,6 +49,7 @@ const PortfolioGallery = () => {
   const classes = useStyles();
   const [expanded, setExpanded] = useState(-1);
   const [imageList, setImageList] = useState([]);
+  const [imageListTaskiton, setImageListTaskiton] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [portfolioData, setPortfolioData] = useState();
   console.log(portfolioData);
@@ -57,6 +60,7 @@ const PortfolioGallery = () => {
     setPortfolioData(portfoliosData);
     setIsLoading(false);
     loadImage("kovan");
+    loadImage("taskiton");
   }, []);
 
   console.log(imageList);
@@ -75,6 +79,18 @@ const PortfolioGallery = () => {
         });
       }
       setImageList(imgArr);
+    } else if (imageName === "taskiton") {
+      for (let i = 1; i <= 6; i++) {
+        import(`../../assets/images/${imageName}/${i}.png`).then((image) => {
+          imgArr.push({
+            src: image.default,
+            thumbnail: image.default,
+            thumbnailWidth: 320,
+            thumbnailHeight: 320,
+          });
+        });
+      }
+      setImageListTaskiton(imgArr);
     }
   };
 
@@ -102,24 +118,19 @@ const PortfolioGallery = () => {
                   >
                     {poItem.projectName}
                   </Typography>
-                  <Typography
-                    variant="body2"
-                    color="textSecondary"
-                    component="p"
-                  >
-                    This impressive paella is a perfect party dish and a fun
-                    meal to cook together with your guests. Add 1 cup of frozen
-                    peas along with the mussels, if you like.
+                  <Typography variant="body2" component="p">
+                    {poItem.projectDetails}
                   </Typography>
                 </CardContent>
                 <CardActions disableSpacing>
-                  <IconButton aria-label="add to favorites">
+                  <IconButton
+                    style={{ color: "white" }}
+                    aria-label="add to favorites"
+                  >
                     <FavoriteIcon />
                   </IconButton>
-                  <IconButton aria-label="share">
-                    <ShareIcon />
-                  </IconButton>
                   <IconButton
+                    style={{ color: "white" }}
                     className={clsx(classes.expand, {
                       [classes.expandOpen]: expanded === index,
                     })}
@@ -132,12 +143,14 @@ const PortfolioGallery = () => {
                 </CardActions>
                 <Collapse in={expanded === index} timeout="auto" unmountOnExit>
                   <CardContent>
-                    <Typography paragraph>Method:</Typography>
-                    <Typography paragraph>
-                      Heat 1/2 cup of the broth in a pot until simmering, add
-                      saffron and set aside for 10 minutes.
-                    </Typography>
-                    <ImageGallery imageList={imageList} />
+                    <Typography paragraph>ScreenShots:</Typography>
+                    {poItem.projectName === "Kovan" ? (
+                      <ImageGallery imageList={imageList} />
+                    ) : poItem.projectName === "Taskiton" ? (
+                      <ImageGallery imageList={imageListTaskiton} />
+                    ) : (
+                      <ImageGallery imageList={imageList} />
+                    )}
                   </CardContent>
                 </Collapse>
               </Card>
