@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: 345,
     marginTop: "3vh",
     backgroundColor: "#05386B",
-    color: "#ffff",
+    color: "#edf5e1",
     marginBottom: "2vh",
   },
   gridStyle: {
@@ -38,6 +38,7 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: "56.25%", // 16:9
   },
   expand: {
+    color: "#05386B",
     transform: "rotate(0deg)",
     marginLeft: "auto",
     transition: theme.transitions.create("transform", {
@@ -52,6 +53,23 @@ const useStyles = makeStyles((theme) => ({
   },
   buttonContainer: {
     marginRight: "1vw",
+    backgroundColor: "#05386b",
+    color: "#edf5e1",
+    "&:hover": {
+      backgroundColor: "#092d50",
+      boxShadow: "7px 10px 28px 1px rgba(0, 0, 0, 0.24)",
+    },
+    "&:active": {
+      boxShadow: "7px 6px 15px 1px rgba(0, 0, 0, 0.24)",
+      transform: "scale(0.97)",
+    },
+  },
+  strip: {
+    height: "1vh",
+    backgroundColor: "#79d1e0",
+  },
+  bottomCard: {
+    backgroundColor: "#79d1e0",
   },
 }));
 
@@ -64,10 +82,10 @@ const PortfolioGallery = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [portfolioData, setPortfolioData] = useState();
 
-  console.log(portfolioData);
   const handleExpandClick = (i) => {
     setExpanded(expanded === i ? -1 : i);
   };
+
   useEffect(() => {
     setPortfolioData(portfoliosData);
     setIsLoading(false);
@@ -136,6 +154,7 @@ const PortfolioGallery = () => {
           return (
             <Grid item xs={12} sm={6} md={4} align="center" key={index}>
               <Card className={classes.root}>
+                <div className={classes.strip}></div>
                 <CardContent>
                   <Typography
                     gutterBottom
@@ -149,7 +168,7 @@ const PortfolioGallery = () => {
                     {poItem.projectDetails}
                   </Typography>
                 </CardContent>
-                <CardActions disableSpacing>
+                <CardActions disableSpacing className={classes.bottomCard}>
                   {poItem.githubLink === "" ||
                   poItem.githubLink === "" ? null : (
                     <Button
@@ -167,6 +186,7 @@ const PortfolioGallery = () => {
                     <Button
                       variant="contained"
                       startIcon={<MdLiveTv />}
+                      className={classes.buttonContainer}
                       onClick={(event) => {
                         handleClick(poItem.liveDemo);
                       }}
@@ -176,7 +196,7 @@ const PortfolioGallery = () => {
                   )}
 
                   <IconButton
-                    style={{ color: "white" }}
+                    style={{ color: "#edf5e1" }}
                     className={clsx(classes.expand, {
                       [classes.expandOpen]: expanded === index,
                     })}
@@ -184,7 +204,7 @@ const PortfolioGallery = () => {
                     aria-expanded={expanded === index}
                     aria-label="show more"
                   >
-                    <ExpandMoreIcon />
+                    <ExpandMoreIcon style={{ color: "#05386B" }} />
                   </IconButton>
                 </CardActions>
                 <Collapse in={expanded === index} timeout="auto" unmountOnExit>
@@ -194,10 +214,19 @@ const PortfolioGallery = () => {
                       poItem.technologies.length === undefined
                         ? null
                         : poItem.technologies.map((skill, index) => {
-                            return <Chip label={skill} key={index} />;
+                            return (
+                              <Chip
+                                style={{ backgroundColor: "#edf5e1" }}
+                                label={skill}
+                                key={index}
+                              />
+                            );
                           })}
                     </div>
-                    <Typography style={{ marginTop: "1vh" }} paragraph>
+                    <Typography
+                      style={{ marginTop: "1vh", color: "#edf5e1" }}
+                      paragraph
+                    >
                       ScreenShots:
                     </Typography>
                     {poItem.projectName === "Kovan" ? (

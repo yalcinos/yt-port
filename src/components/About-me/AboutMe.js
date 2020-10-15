@@ -75,7 +75,12 @@ const AboutMe = () => {
                 {event.technologies.length === 0
                   ? null
                   : event.technologies.map((skill) => {
-                      return <Chip label={skill} />;
+                      return (
+                        <Chip
+                          style={{ backgroundColor: "#edf5e1" }}
+                          label={skill}
+                        />
+                      );
                     })}
               </div>
             </VerticalTimelineElement>

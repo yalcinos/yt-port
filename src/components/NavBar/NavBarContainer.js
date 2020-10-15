@@ -19,7 +19,7 @@ const useStyles = makeStyles({
   },
   link: {
     textDecoration: "none",
-    color: "white",
+    color: "#edf5e1",
   },
   linkLogo: {
     textDecoration: "none",
