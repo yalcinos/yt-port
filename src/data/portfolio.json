@@ -1,44 +1,59 @@
 [
     {   "id": 1,
         "projectName": "Kovan",
-        "images": [],
-        "projectDetails": "Coming Soon!...",
+        "projectDetails": "Plugins based household management mobile application to manage all kinds of small groups effectively and make your life easier",
         "location": "Vancouver, Canada",
-        "technologies": ["React-Native", "Material UI"]
+        "technologies": ["React-Native", "NativeBase UI", "FireBase", "Node.js", "MySQL", "Expo"],
+        "githubLink" : "",
+        "liveDemo": ""
     },
     {   "id": 2,
         "projectName": "Taskiton",
-        "images": [],
-        "projectDetails": "Coming Soon!...",
+        "projectDetails": "Kanban-Base web application to manage the business and personal tasks effectively and communicate with colleagues with Real-Time chat.",
         "location": "Vancouver, Canada",
-        "technologies": ["React-Native", "Material UI"]
+        "technologies": ["React.js", "Node.js","Material UI", "Chart.js", "Socket.io", "MySQL"],
+        "githubLink" : "",
+        "liveDemo": ""
     },
     {   "id": 3,
-        "projectName": "Kovan2",
-        "images": [],
-        "projectDetails": "Coming Soon!...",
+        "projectName": "Odyssey",
+        "projectDetails": "Social driven responsive mobile application that helps to share your memories with other people and explore new places by using a gamified map",
         "location": "Vancouver, Canada",
-        "technologies": ["React-Native", "Material UI"]
+        "technologies": ["JavaScript", "Material UI", "Node.js", "Framework7","Cordova"],
+        "githubLink" : "",
+        "liveDemo": ""
     },
     {   "id": 4,
-        "projectName": "Kovan3",
+        "projectName": "WeeklyMood",
         "images": [],
-        "projectDetails": "Coming Soon!...",
+        "projectDetails": "The application measure and analysis employee motivation by questions. Analyze the employees' motivation by using their answers. ",
         "location": "Vancouver, Canada",
-        "technologies": ["React-Native", "Material UI"]
+        "technologies": ["Angular.js", "PHP(Laravel)", "MySQL"],
+        "githubLink" : "",
+        "liveDemo": ""
     },
     {   "id": 5,
-        "projectName": "Kovan3",
-        "images": [],
-        "projectDetails": "Coming Soon!...",
+        "projectName": "React Movie List",
+        "projectDetails": "List movies and TV Shows with The Movie Database API using React.js",
         "location": "Vancouver, Canada",
-        "technologies": ["React-Native", "Material UI"]
+        "technologies": ["React.js", "Material UI", "Movie DB API"],
+        "githubLink" : "",
+        "liveDemo": ""
     },
     {   "id": 6,
-        "projectName": "Kovan3",
-        "images": [],
-        "projectDetails": "Coming Soon!...",
+        "projectName": "Covid19 Tracker",
+        "projectDetails": "Covid19 Tracker which was written with React.js",
         "location": "Vancouver, Canada",
-        "technologies": ["React-Native", "Material UI"]
+        "technologies": ["React.js", "Material UI", "Chart.js"],
+        "githubLink" : "https://github.com/yalcinos/Covid19-React",
+        "liveDemo": "https://yalcinos.github.io/Covid19-React/"
+    },
+    {   "id": 7,
+        "projectName": "RGB Color Guess Game",
+        "projectDetails": "A color guessing game. A JavaScript-based application to remind you of RGB color models.",
+        "location": "Vancouver, Canada",
+        "technologies": ["JavaScript", "HTML", "CSS"],
+        "githubLink" : "",
+        "liveDemo": ""
     }
 ]

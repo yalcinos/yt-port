@@ -1,12 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import clsx from "clsx";
-import Card from "@material-ui/core/Card";
-import CardContent from "@material-ui/core/CardContent";
-import CardActions from "@material-ui/core/CardActions";
-import Collapse from "@material-ui/core/Collapse";
-import IconButton from "@material-ui/core/IconButton";
-import Typography from "@material-ui/core/Typography";
+import {
+  Chip,
+  Card,
+  CardContent,
+  CardActions,
+  Collapse,
+  IconButton,
+  Button,
+  Typography,
+} from "@material-ui/core";
 import { red } from "@material-ui/core/colors";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import ShareIcon from "@material-ui/icons/Share";
@@ -14,6 +18,8 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import ImageGallery from "./ImageGallery";
 import portfoliosData from "../../data/portfolio.json";
 import { Grid } from "@material-ui/core";
+import "../../App.css";
+
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 345,
@@ -50,8 +56,10 @@ const PortfolioGallery = () => {
   const [expanded, setExpanded] = useState(-1);
   const [imageList, setImageList] = useState([]);
   const [imageListTaskiton, setImageListTaskiton] = useState([]);
+  const [imageListOdeyssey, setImageListOdyssey] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [portfolioData, setPortfolioData] = useState();
+
   console.log(portfolioData);
   const handleExpandClick = (i) => {
     setExpanded(expanded === i ? -1 : i);
@@ -61,19 +69,22 @@ const PortfolioGallery = () => {
     setIsLoading(false);
     loadImage("kovan");
     loadImage("taskiton");
+    loadImage("odyssey");
   }, []);
 
-  console.log(imageList);
+  const handleClick = (webSiteLink) => {
+    window.open(webSiteLink, "_blank");
+  };
 
   const loadImage = (imageName) => {
     let imgArr = [];
     if (imageName === "kovan") {
-      for (let i = 1; i <= 9; i++) {
+      for (let i = 1; i <= 12; i++) {
         import(`../../assets/images/${imageName}/${i}.png`).then((image) => {
           imgArr.push({
             src: image.default,
             thumbnail: image.default,
-            thumbnailWidth: 320,
+            thumbnailWidth: 250,
             thumbnailHeight: 320,
           });
         });
@@ -85,12 +96,24 @@ const PortfolioGallery = () => {
           imgArr.push({
             src: image.default,
             thumbnail: image.default,
-            thumbnailWidth: 320,
-            thumbnailHeight: 320,
+            thumbnailWidth: 400,
+            thumbnailHeight: 200,
           });
         });
       }
       setImageListTaskiton(imgArr);
+    } else if (imageName === "odyssey") {
+      for (let i = 1; i <= 12; i++) {
+        import(`../../assets/images/${imageName}/${i}.png`).then((image) => {
+          imgArr.push({
+            src: image.default,
+            thumbnail: image.default,
+            thumbnailWidth: 250,
+            thumbnailHeight: 320,
+          });
+        });
+      }
+      setImageListOdyssey(imgArr);
     }
   };
 
@@ -123,12 +146,18 @@ const PortfolioGallery = () => {
                   </Typography>
                 </CardContent>
                 <CardActions disableSpacing>
-                  <IconButton
-                    style={{ color: "white" }}
-                    aria-label="add to favorites"
-                  >
-                    <FavoriteIcon />
-                  </IconButton>
+                  {poItem.githubLink === "" ||
+                  poItem.githubLink === "" ? null : (
+                    <Button
+                      variant="contained"
+                      onClick={(event) => {
+                        handleClick(poItem.githubLink);
+                      }}
+                    >
+                      Source
+                    </Button>
+                  )}
+
                   <IconButton
                     style={{ color: "white" }}
                     className={clsx(classes.expand, {
@@ -143,14 +172,22 @@ const PortfolioGallery = () => {
                 </CardActions>
                 <Collapse in={expanded === index} timeout="auto" unmountOnExit>
                   <CardContent>
+                    <div className="tag-style-project">
+                      {poItem.technologies.length === 0 ||
+                      poItem.technologies.length === undefined
+                        ? null
+                        : poItem.technologies.map((skill, index) => {
+                            return <Chip label={skill} key={index} />;
+                          })}
+                    </div>
                     <Typography paragraph>ScreenShots:</Typography>
                     {poItem.projectName === "Kovan" ? (
                       <ImageGallery imageList={imageList} />
                     ) : poItem.projectName === "Taskiton" ? (
                       <ImageGallery imageList={imageListTaskiton} />
-                    ) : (
-                      <ImageGallery imageList={imageList} />
-                    )}
+                    ) : poItem.projectName === "Odyssey" ? (
+                      <ImageGallery imageList={imageListOdeyssey} />
+                    ) : null}
                   </CardContent>
                 </Collapse>
               </Card>

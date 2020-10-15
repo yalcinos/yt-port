@@ -73,7 +73,6 @@ const AboutMe = () => {
               </h5>
               <p>{event.eventDetails}</p>
               <div className="tag-style">
-                <h5 className="tech-div-style">Technologies;</h5>
                 {event.technologies.length === 0
                   ? null
                   : event.technologies.map((skill) => {
