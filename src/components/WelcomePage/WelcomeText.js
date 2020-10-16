@@ -20,6 +20,7 @@ const useStyles = makeStyles((theme) => ({
   },
   socialIconStyle: {
     color: "#05386B",
+    marginTop: "5vh",
     textAlign: "center",
   },
   trial: {
