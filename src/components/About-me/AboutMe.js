@@ -33,12 +33,14 @@ const AboutMe = () => {
     "#03c4a1",
     "#726a95",
     "#1e5f74",
+    "#ea9438",
     "#79d1e0",
   ];
   const EventIcons = [
     FaStudiovinari,
     SchoolIcon,
     FaServer,
+    FaCampground,
     SchoolIcon,
     FaCampground,
     FaUniversity,
@@ -74,9 +76,10 @@ const AboutMe = () => {
               <div className="tag-style">
                 {event.technologies.length === 0
                   ? null
-                  : event.technologies.map((skill) => {
+                  : event.technologies.map((skill, index) => {
                       return (
                         <Chip
+                          key={index}
                           style={{ backgroundColor: "#edf5e1" }}
                           label={skill}
                         />

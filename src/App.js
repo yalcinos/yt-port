@@ -9,7 +9,7 @@ import Footer from "./components/Footer/Footer";
 import Portfolio from "./components/Portfolio/PortfolioGallery";
 const values = ["HELLO, I'M YALCIN !"];
 const headline =
-  " Frontend Developer | Open-Source Enthusiast | Have Twin Sishei";
+  "Frontend Developer | Open-Source Enthusiast | Have Twin Sishei";
 
 function App() {
   const { result, dencrypt } = useDencrypt();

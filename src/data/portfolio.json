@@ -19,7 +19,7 @@
         "projectName": "Odyssey",
         "projectDetails": "Social driven responsive mobile application that helps to share your memories with other people and explore new places by using a gamified map",
         "location": "Vancouver, Canada",
-        "technologies": ["JavaScript", "Material UI", "Node.js", "Framework7","Cordova"],
+        "technologies": ["JavaScript(Vanilla)", "Node.js", "Framework7","Cordova"],
         "githubLink" : "https://github.com/OdysseyApp/OdysseyCordova",
         "liveDemo": ""
     },
@@ -28,8 +28,8 @@
         "images": [],
         "projectDetails": "The application measure and analysis employee motivation by questions. Analyze the employees' motivation by using their answers. ",
         "location": "Vancouver, Canada",
-        "technologies": ["Angular.js", "PHP(Laravel)", "MySQL"],
-        "githubLink" : "https://github.com/OdysseyApp/OdysseyCordova",
+        "technologies": ["Angular.js", "PHP(Laravel)", "MySQL", "Bootstrap"],
+        "githubLink" : "https://github.com/ikamp/weeklymood",
         "liveDemo": ""
     },
     {   "id": 5,

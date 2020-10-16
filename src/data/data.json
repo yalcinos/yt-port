@@ -2,9 +2,9 @@
   {
     "id": 1,
     "date": "September 2020 - Present",
-    "eventName": "Fresh Graduated , YAY!",
+    "eventName": "Graduated , YAY!",
     "eventIcon": "",
-    "eventDetails": " I created 3 projects with React, React-Native, Redux and Node.js. Now I am ready to find my dream job!",
+    "eventDetails": "Lifelong learning!!",
     "location": "Vancouver, Canada",
     "technologies": []
   },
@@ -16,13 +16,22 @@
     "location": "Vancouver, Canada",
     "technologies": ["React.js", "Redux", "React-Native", "MySQL", "Node.js"]
   },
+  
   {
     "id": 3,
-    "date": "Jul 2018 - April2019",
+    "date": "Jul 2018 - April 2019",
     "eventName": "Software Infrastructure Engineer at Accenture",
     "eventDetails": "I have worked as a full-time consultant for giving support to the production servers at the biggest telecommunication company which is Turk Telekom.",
     "location": "Istanbul, Turkey",
     "technologies": ["Linux", "Bash Script", "RPA", "Oracle Weblogic"]
+  },
+  {
+    "id": 10,
+    "date": "September 2018 - Feb 2019",
+    "eventName": "Earned Mobile Web Specialist Scholarship from Google",
+    "eventDetails": "I have selected top 1000 developers who got scholarship during a coding challenge that was presented by Udacity. Then, I earned a paid bootcamp  program which takes 6 months from Google and I learnt Progressive Web application pattern and created a web application by applying this knowledge that I learnt from this scholarship.",
+    "location": "Worldwide",
+    "technologies": ["PWA", "Accessibility", "Lighthouse"]
   },
   {
     "id": 4,

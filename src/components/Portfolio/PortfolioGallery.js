@@ -155,7 +155,7 @@ const PortfolioGallery = () => {
             <Grid item xs={12} sm={6} md={4} align="center" key={index}>
               <Card className={classes.root}>
                 <div className={classes.strip}></div>
-                <CardContent>
+                <CardContent style={{ height: "17vh" }}>
                   <Typography
                     gutterBottom
                     variant="h5"
