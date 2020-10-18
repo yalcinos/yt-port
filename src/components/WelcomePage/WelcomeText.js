@@ -20,6 +20,16 @@ const useStyles = makeStyles((theme) => ({
   },
   socialIconStyle: {
     color: "#05386B",
+
+    "&:hover": {
+      color: "#092d50",
+      backgroundColor: "transparent",
+    },
+    "&:active": {
+      transform: "scale(0.97)",
+    },
+  },
+  socialIconContainer: {
     marginTop: "5vh",
     textAlign: "center",
   },
@@ -120,7 +130,7 @@ const WelcomeText = (props) => {
           </Typography>
         </Grid>
         <Grid item xs={12}>
-          <div className={classes.socialIconStyle}>
+          <div className={classes.socialIconContainer}>
             <IconButton
               className={classes.socialIconStyle}
               onClick={(event) => {
