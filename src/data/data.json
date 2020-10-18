@@ -29,7 +29,7 @@
     "id": 10,
     "date": "September 2018 - Feb 2019",
     "eventName": "Earned Mobile Web Specialist Scholarship from Google",
-    "eventDetails": "I have selected top 1000 developers who got scholarship during a coding challenge that was presented by Udacity. Then, I earned a paid bootcamp  program which takes 6 months from Google and I learnt Progressive Web application pattern and created a web application by applying this knowledge that I learnt from this scholarship.",
+    "eventDetails": "I got selected top 1000 developers who got scholarships during a coding challenge that was presented by Udacity. Then, I earned a paid bootcamp  program which takes 6 months from Google and I learnt Progressive Web application pattern and created a web application by applying this knowledge that I learnt from this scholarship.",
     "location": "Worldwide",
     "technologies": ["PWA", "Accessibility", "Lighthouse"]
   },
@@ -37,7 +37,7 @@
     "id": 4,
     "date": "September 2017 - May 2018",
     "eventName": "Graduated From Language School (ILAC)",
-    "eventDetails": "I studied at International Language of Canada for IELTS preperation and explored Canada.",
+    "eventDetails": "I studied at the International Language of Canada for IELTS preparation and explored Canada.",
     "location": "Vancouver, Canada",
     "technologies": ["English", "IELTS"]
   },
@@ -45,7 +45,7 @@
     "id": 5,
     "date": "July 2017 - August 2017",
     "eventName": "Bootcamp at KolayHR",
-    "eventDetails": "After I graduated, I have selected the top 7 new graduate students in the bootcamp event in 2017. And I was invited to a Bootcamp which takes 2 months.",
+    "eventDetails": "After I graduated, I got selected the top 7 new graduate students in the Bootcamp event in 2017. And was invited to a Bootcamp which takes 2 months.",
     "location": "Istanbul, Turkey",
     "technologies": ["Angular.js", "HTML", "CSS", "PHP","Laravel"]
   },
