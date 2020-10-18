@@ -28,10 +28,10 @@
   {
     "id": 10,
     "date": "September 2018 - Feb 2019",
-    "eventName": "Earned Mobile Web Specialist Scholarship from Google",
-    "eventDetails": "I got selected top 1000 developers who got scholarships during a coding challenge that was presented by Udacity. Then, I earned a paid bootcamp  program which takes 6 months from Google and I learnt Progressive Web application pattern and created a web application by applying this knowledge that I learnt from this scholarship.",
+    "eventName": "Earned Scholarship from Google",
+    "eventDetails": "I got selected top 1000 developers who got a scholarship funded by Google during a coding challenge that was presented by Udacity. The scholarship contained courses that take 6 months to complete. I learnt the Progressive Web application pattern and created a web application by applying this knowledge that I learnt from this course.",
     "location": "Worldwide",
-    "technologies": ["PWA", "Accessibility", "Lighthouse"]
+    "technologies": ["JavaScript", "PWA", "Accessibility", "Lighthouse", "Accessibility", "IndexDB", "Caching"]
   },
   {
     "id": 4,
@@ -53,14 +53,14 @@
     "id": 6,
     "date": "May 2017",
     "eventName": "Graduated From University",
-    "eventDetails": "I developed applications with Java, PHP, C#.",
+    "eventDetails": "I developed applications with Java, PHP, C#. Attented enterprenuership camp and pitch my own idea ",
     "location": "Izmir, Turkey",
     "technologies": ["Java", "PHP", "MySQL", "GIS"]
   }, {
     "id": 7,
     "date": "Oct 2016 - May 2017",
-    "eventName": "Software Developer at Startup company",
-    "eventDetails": "I have worked as a developer for around 7 months in a startup company that is in early-stage at the incubator center on our university campus.",
+    "eventName": "Lead Software Developer at Startup company",
+    "eventDetails": "I have worked as a lead developer for 7 months in a startup company that is in early-stage at the incubator center on our university campus.",
     "location": "Izmir, Turkey",
     "technologies": ["C#", "GIS", "GNSS"]
   },
