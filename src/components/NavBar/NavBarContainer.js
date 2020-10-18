@@ -52,15 +52,15 @@ const NavBarContainer = () => {
         <div className={classes.flexMenu}>
           <Box m={1} marginLeft="10px">
             <Button className={classes.button} variant="contained">
-              <Link className={classes.link} to="/portfolio">
-                Portfolio
+              <Link className={classes.link} to="/about me">
+                About Me
               </Link>
             </Button>
           </Box>
           <Box m={1}>
             <Button className={classes.button} variant="contained">
-              <Link className={classes.link} to="/about me">
-                About Me
+              <Link className={classes.link} to="/portfolio">
+                Portfolio
               </Link>
             </Button>
           </Box>

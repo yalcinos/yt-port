@@ -31,7 +31,7 @@
     "eventName": "Earned Scholarship from Google",
     "eventDetails": "I got selected top 1000 developers who got a scholarship funded by Google during a coding challenge that was presented by Udacity. The scholarship contained courses that take 6 months to complete. I learnt the Progressive Web application pattern and created a web application by applying this knowledge that I learnt from this course.",
     "location": "Worldwide",
-    "technologies": ["JavaScript", "PWA", "Accessibility", "Lighthouse", "Accessibility", "IndexDB", "Caching"]
+    "technologies": ["JavaScript", "PWA", "Lighthouse", "Accessibility", "IndexDB", "Caching"]
   },
   {
     "id": 4,
