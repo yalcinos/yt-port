@@ -201,7 +201,7 @@ const PortfolioGallery = () => {
                 </div>
                 <CardContent style={{ height: "17vh" }}>
                   <List component="nav" className={classes.featureContainer}>
-                    <ListItem style={{ fontFamily: "sans-serif" }}>
+                    <ListItem>
                       <ListItemIcon>
                         <FaCheckSquare color="#05386b" size="1.5em" />
                       </ListItemIcon>

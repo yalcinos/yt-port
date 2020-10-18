@@ -22,7 +22,7 @@ import "../../App.css";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: 345,
+    maxWidth: 450,
     marginTop: "3vh",
     backgroundColor: "#05386B",
     color: "#edf5e1",
@@ -152,7 +152,7 @@ const PortfolioGallery = () => {
       ) : (
         portfolioData.map((poItem, index) => {
           return (
-            <Grid item xs={12} sm={6} md={4} align="center" key={index}>
+            <Grid item xs={12} sm={6} md={6} align="center" key={index}>
               <Card className={classes.root}>
                 <div className={classes.strip}></div>
                 <CardContent style={{ height: "17vh" }}>
@@ -160,7 +160,11 @@ const PortfolioGallery = () => {
                     gutterBottom
                     variant="h5"
                     component="h2"
-                    style={{ textAlign: "center" }}
+                    style={{
+                      textAlign: "center",
+                      fontFamily: "Bungee Inline",
+                      // fontWeight: "bold",
+                    }}
                   >
                     {poItem.projectName}
                   </Typography>
