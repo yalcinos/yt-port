@@ -15,7 +15,7 @@ import {
   FaUserGraduate,
 } from "react-icons/fa";
 import "react-vertical-timeline-component/style.min.css";
-import portfolioData from "../../data/data.json";
+import portfolioData from "../../data/timeline.json";
 import SchoolIcon from "@material-ui/icons/School";
 import Divider from "@material-ui/core/Divider";
 import "../../App.css";
