@@ -199,24 +199,32 @@ const PortfolioGallery = () => {
                     {poItem.projectDetails}
                   </Typography>
                 </div>
-                <CardContent style={{ height: "17vh" }}>
+                <CardContent style={{ height: "25vh" }}>
                   <List component="nav" className={classes.featureContainer}>
-                    <ListItem>
+                    {poItem.features.length === 0 ||
+                    poItem.features.length === undefined
+                      ? null
+                      : poItem.features.map((feature) => {
+                          return (
+                            <ListItem>
+                              <ListItemIcon>
+                                <FaCheckSquare color="#05386b" size="1.5em" />
+                              </ListItemIcon>
+                              <Typography className={classes.featureContainer}>
+                                {feature}
+                              </Typography>
+                            </ListItem>
+                          );
+                        })}
+
+                    {/* <ListItem>
                       <ListItemIcon>
                         <FaCheckSquare color="#05386b" size="1.5em" />
                       </ListItemIcon>
                       <Typography className={classes.featureContainer}>
                         adsk jaksdj k jadsdjka kjasd jk
                       </Typography>
-                    </ListItem>
-                    <ListItem>
-                      <ListItemIcon>
-                        <FaCheckSquare color="#05386b" size="1.5em" />
-                      </ListItemIcon>
-                      <Typography className={classes.featureContainer}>
-                        adsk jaksdj k jadsdjka kjasd jk
-                      </Typography>
-                    </ListItem>
+                    </ListItem> */}
                   </List>
                   <Divider />
                 </CardContent>
