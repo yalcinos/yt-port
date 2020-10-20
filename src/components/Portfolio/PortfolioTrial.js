@@ -19,16 +19,8 @@ import { MdCode } from "react-icons/md";
 import { MdLiveTv } from "react-icons/md";
 import { red } from "@material-ui/core/colors";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import {
-  FaCheckSquare,
-  FaReact,
-  FaHtml5,
-  FaCss3,
-  FaNodeJs,
-} from "react-icons/fa";
-import { SiRedux, SiMysql } from "react-icons/si";
+import { FaCheckSquare } from "react-icons/fa";
 import ImageGallery from "./ImageGallery";
-// import portfoliosData from "../../data/portfolio.json";
 import portfoliosData from "../../data/portfolio";
 import { Grid } from "@material-ui/core";
 import "../../App.css";
@@ -49,6 +41,14 @@ const useStyles = makeStyles((theme) => ({
   media: {
     height: 0,
     paddingTop: "56.25%", // 16:9
+  },
+  techIconStyle: {
+    color: "#05386B",
+    marginRight: "1vw",
+    fontSize: "1.5rem",
+  },
+  techIconContainer: {
+    marginRight: "1vw",
   },
   expand: {
     color: "#05386B",
@@ -113,7 +113,6 @@ const PortfolioGallery = () => {
     "#03c4a1",
     "#79d1e0",
   ];
-  const techIcons = [FaReact, FaHtml5, FaCss3, FaNodeJs, SiRedux, SiMysql];
 
   const handleExpandClick = (i) => {
     setExpanded(expanded === i ? -1 : i);
@@ -262,6 +261,13 @@ const PortfolioGallery = () => {
                       Demo
                     </Button>
                   )}
+                  <div className={classes.techIconContainer}>
+                    {poItem.techIcons.map((tech, index) => {
+                      return React.createElement(tech, {
+                        className: classes.techIconStyle,
+                      });
+                    })}
+                  </div>
 
                   <IconButton
                     style={{ color: "#edf5e1" }}
