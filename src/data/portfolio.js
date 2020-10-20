@@ -58,7 +58,7 @@ const portfoliosData = [
       "MySQL",
     ],
     features: [
-      "Create,manage tasks",
+      "Create/Manage tasks",
       "Assign tasks to other people",
       "Real-time chat application",
       "Analytic dashboard for tracking tasks",
@@ -75,7 +75,7 @@ const portfoliosData = [
     location: "Vancouver, Canada",
     technologies: ["JavaScript(Vanilla)", "Node.js", "Framework7", "Cordova"],
     features: [
-      "Check-in at the specific places",
+      "Instant check-in at the specific places",
       "Augmented Reality",
       "Create a team and conquer other team lands on the google maps.",
     ],
@@ -93,7 +93,7 @@ const portfoliosData = [
     technologies: ["Angular.js", "PHP(Laravel)", "MySQL", "Bootstrap"],
     features: [
       "Send recurring email",
-      "Analyze email response",
+      "Analyze employees' email response",
       "Analytic dashboard",
     ],
     techIcons: [FaAngular, SiPhp, FaGulp, SiPostgresql],

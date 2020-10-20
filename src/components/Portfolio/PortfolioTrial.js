@@ -27,7 +27,7 @@ import "../../App.css";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: 450,
+    maxWidth: 480,
     marginTop: "3vh",
     backgroundColor: "#efefef",
     color: "#edf5e1",
@@ -48,7 +48,10 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "1.5rem",
   },
   techIconContainer: {
-    marginRight: "1vw",
+    marginLeft: "1vw",
+    [theme.breakpoints.down("sm")]: {
+      marginLeft: "2vw",
+    },
   },
   expand: {
     color: "#05386B",
@@ -79,7 +82,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   featureContainer: {
-    color: "black",
+    color: "#05386b",
     fontFamily: "Indie Flower",
   },
   strip: {
@@ -184,7 +187,7 @@ const PortfolioGallery = () => {
       ) : (
         portfolioData.map((poItem, index) => {
           return (
-            <Grid item xs={12} sm={6} md={6} align="center" key={index}>
+            <Grid item xs={11} sm={6} md={6} align="center" key={index}>
               <Card className={classes.root}>
                 <div
                   className={classes.strip}
@@ -211,9 +214,18 @@ const PortfolioGallery = () => {
                     poItem.features.length === 0 ||
                     poItem.features.length === undefined
                       ? { display: "none" }
-                      : { height: "25vh" }
+                      : { height: "26vh" }
                   }
                 >
+                  <Typography
+                    variant="subtitle1"
+                    align="left"
+                    component="p"
+                    style={{ paddingLeft: "16px" }}
+                    className={classes.featureContainer}
+                  >
+                    Features;
+                  </Typography>
                   <List component="nav" className={classes.featureContainer}>
                     {poItem.features.length === 0 ||
                     poItem.features.length === undefined
@@ -222,7 +234,7 @@ const PortfolioGallery = () => {
                           return (
                             <ListItem>
                               <ListItemIcon>
-                                <FaCheckSquare color="#05386b" size="1.5em" />
+                                <FaCheckSquare color="#05386b" size="1.2em" />
                               </ListItemIcon>
                               <Typography className={classes.featureContainer}>
                                 {feature}
@@ -231,8 +243,8 @@ const PortfolioGallery = () => {
                           );
                         })}
                   </List>
-                  <Divider />
                 </CardContent>
+                <Divider />
                 <CardActions disableSpacing className={classes.bottomCard}>
                   {poItem.githubLink === "" ||
                   poItem.githubLink === "" ? null : (
@@ -290,7 +302,7 @@ const PortfolioGallery = () => {
                         : poItem.technologies.map((skill, index) => {
                             return (
                               <Chip
-                                style={{ backgroundColor: "#edf5e1" }}
+                                style={{ backgroundColor: themeColor[index] }}
                                 label={skill}
                                 key={index}
                               />
@@ -298,7 +310,7 @@ const PortfolioGallery = () => {
                           })}
                     </div>
                     <Typography
-                      style={{ marginTop: "1vh", color: "#edf5e1" }}
+                      style={{ marginTop: "1vh", color: "#05386B" }}
                       paragraph
                     >
                       ScreenShots:

@@ -13,7 +13,7 @@
         "projectDetails": "Kanban-Base web application to manage the business and personal tasks effectively and communicate with colleagues with Real-Time chat.",
         "location": "Vancouver, Canada",
         "technologies": ["React.js", "Node.js","Material UI", "Chart.js", "Socket.io", "MySQL"],
-        "features": ["Create,manage tasks","Assign tasks to other people", "Real-time chat application","Analytic dashboard for tracking tasks"],
+        "features": ["Create, manage tasks","Assign tasks to other people", "Real-time chat application","Analytic dashboard for tracking tasks"],
         "githubLink" : "https://github.com/Taskiton/taskiton",
         "liveDemo": ""
     },
