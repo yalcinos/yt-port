@@ -46,6 +46,9 @@ const useStyles = makeStyles((theme) => ({
     color: "#05386B",
     marginRight: "1vw",
     fontSize: "1.5rem",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "1.2rem",
+    },
   },
   techIconContainer: {
     marginLeft: "1vw",
@@ -86,10 +89,9 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Indie Flower",
   },
   strip: {
-    height: "15vh",
+    // height: "15vh",
     padding: 10,
     color: "#05386b",
-    // backgroundColor: "#79d1e0",
   },
   bottomCard: {
     backgroundColor: "#efefef",
@@ -214,7 +216,7 @@ const PortfolioGallery = () => {
                     poItem.features.length === 0 ||
                     poItem.features.length === undefined
                       ? { display: "none" }
-                      : { height: "26vh" }
+                      : null
                   }
                 >
                   <Typography
@@ -233,7 +235,7 @@ const PortfolioGallery = () => {
                       : poItem.features.map((feature) => {
                           return (
                             <ListItem>
-                              <ListItemIcon>
+                              <ListItemIcon style={{ minWidth: "30px" }}>
                                 <FaCheckSquare color="#05386b" size="1.2em" />
                               </ListItemIcon>
                               <Typography className={classes.featureContainer}>
