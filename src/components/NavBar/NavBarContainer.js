@@ -28,6 +28,7 @@ const useStyles = makeStyles({
   button: {
     fontFamily: "Audiowide",
     backgroundColor: "#05386B",
+    color: "#edf5e1",
     "&:hover": {
       backgroundColor: "#092d50",
       boxShadow: "7px 10px 28px 1px rgba(0, 0, 0, 0.24)",
@@ -51,18 +52,18 @@ const NavBarContainer = () => {
         </Box>
         <div className={classes.flexMenu}>
           <Box m={1} marginLeft="10px">
-            <Button className={classes.button} variant="contained">
-              <Link className={classes.link} to="/about me">
+            <Link className={classes.link} to="/about me">
+              <Button className={classes.button} variant="contained">
                 About Me
-              </Link>
-            </Button>
+              </Button>
+            </Link>
           </Box>
           <Box m={1}>
-            <Button className={classes.button} variant="contained">
-              <Link className={classes.link} to="/portfolio">
+            <Link className={classes.link} to="/portfolio">
+              <Button className={classes.button} variant="contained">
                 Portfolio
-              </Link>
-            </Button>
+              </Button>
+            </Link>
           </Box>
         </div>
       </Box>
