@@ -14,6 +14,7 @@ import {
   Divider,
   ListItemIcon,
   Typography,
+  CircularProgress,
 } from "@material-ui/core";
 import { MdCode } from "react-icons/md";
 import { MdLiveTv } from "react-icons/md";
@@ -185,7 +186,7 @@ const PortfolioGallery = () => {
       justify="center"
     >
       {isLoading ? (
-        <div>LOADING...</div>
+        <CircularProgress style={{ color: "#05386b" }} />
       ) : (
         portfolioData.map((poItem, index) => {
           return (
