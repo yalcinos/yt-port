@@ -19,9 +19,17 @@ import { MdCode } from "react-icons/md";
 import { MdLiveTv } from "react-icons/md";
 import { red } from "@material-ui/core/colors";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import { FaCheckSquare } from "react-icons/fa";
+import {
+  FaCheckSquare,
+  FaReact,
+  FaHtml5,
+  FaCss3,
+  FaNodeJs,
+} from "react-icons/fa";
+import { SiRedux, SiMysql } from "react-icons/si";
 import ImageGallery from "./ImageGallery";
-import portfoliosData from "../../data/portfolio.json";
+// import portfoliosData from "../../data/portfolio.json";
+import portfoliosData from "../../data/portfolio";
 import { Grid } from "@material-ui/core";
 import "../../App.css";
 
@@ -105,7 +113,7 @@ const PortfolioGallery = () => {
     "#03c4a1",
     "#79d1e0",
   ];
-  const techIcons = [];
+  const techIcons = [FaReact, FaHtml5, FaCss3, FaNodeJs, SiRedux, SiMysql];
 
   const handleExpandClick = (i) => {
     setExpanded(expanded === i ? -1 : i);
@@ -199,7 +207,14 @@ const PortfolioGallery = () => {
                     {poItem.projectDetails}
                   </Typography>
                 </div>
-                <CardContent style={{ height: "25vh" }}>
+                <CardContent
+                  style={
+                    poItem.features.length === 0 ||
+                    poItem.features.length === undefined
+                      ? { display: "none" }
+                      : { height: "25vh" }
+                  }
+                >
                   <List component="nav" className={classes.featureContainer}>
                     {poItem.features.length === 0 ||
                     poItem.features.length === undefined
@@ -216,15 +231,6 @@ const PortfolioGallery = () => {
                             </ListItem>
                           );
                         })}
-
-                    {/* <ListItem>
-                      <ListItemIcon>
-                        <FaCheckSquare color="#05386b" size="1.5em" />
-                      </ListItemIcon>
-                      <Typography className={classes.featureContainer}>
-                        adsk jaksdj k jadsdjka kjasd jk
-                      </Typography>
-                    </ListItem> */}
                   </List>
                   <Divider />
                 </CardContent>
