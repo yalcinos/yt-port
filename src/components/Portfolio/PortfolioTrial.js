@@ -1,30 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import clsx from "clsx";
-import {
-  Chip,
-  Card,
-  CardContent,
-  CardActions,
-  Collapse,
-  IconButton,
-  Button,
-  List,
-  ListItem,
-  Divider,
-  ListItemIcon,
-  Typography,
-  CircularProgress,
-} from "@material-ui/core";
-import { MdCode } from "react-icons/md";
-import { MdLiveTv } from "react-icons/md";
-import { red } from "@material-ui/core/colors";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import { FaCheckSquare } from "react-icons/fa";
-import ImageGallery from "./ImageGallery";
+import { Card, Divider, CircularProgress } from "@material-ui/core";
 import portfoliosData from "../../data/portfolio";
 import { Grid } from "@material-ui/core";
 import "../../App.css";
+
+//Import sub-components
+import PortfolioHeader from "./PortfolioHeader";
+import PortfolioFeature from "./PortfolioFeatures";
+import PortfolioBottom from "./PortfolioBottom";
+import AccordionContainer from "./AccordionContainer";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -39,24 +24,7 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "10vh",
     minHeight: "100px",
   },
-  media: {
-    height: 0,
-    paddingTop: "56.25%", // 16:9
-  },
-  techIconStyle: {
-    color: "#05386B",
-    marginRight: "1vw",
-    fontSize: "1.5rem",
-    [theme.breakpoints.down("sm")]: {
-      fontSize: "1.2rem",
-    },
-  },
-  techIconContainer: {
-    marginLeft: "1vw",
-    [theme.breakpoints.down("sm")]: {
-      marginLeft: "2vw",
-    },
-  },
+
   expand: {
     color: "#05386B",
     transform: "rotate(0deg)",
@@ -64,38 +32,6 @@ const useStyles = makeStyles((theme) => ({
     transition: theme.transitions.create("transform", {
       duration: theme.transitions.duration.shortest,
     }),
-  },
-  expandOpen: {
-    transform: "rotate(180deg)",
-  },
-  avatar: {
-    backgroundColor: red[500],
-  },
-  buttonContainer: {
-    marginRight: "1vw",
-    backgroundColor: "#05386b",
-    // color: "#edf5e1",
-    color: "#05386b",
-    "&:hover": {
-      backgroundColor: "#092d50",
-      boxShadow: "7px 10px 28px 1px rgba(0, 0, 0, 0.24)",
-    },
-    "&:active": {
-      boxShadow: "7px 6px 15px 1px rgba(0, 0, 0, 0.24)",
-      transform: "scale(0.97)",
-    },
-  },
-  featureContainer: {
-    color: "#05386b",
-    fontFamily: "Indie Flower",
-  },
-  strip: {
-    // height: "15vh",
-    padding: 10,
-    color: "#05386b",
-  },
-  bottomCard: {
-    backgroundColor: "#efefef",
   },
 }));
 
@@ -107,18 +43,6 @@ const PortfolioGallery = () => {
   const [imageListOdeyssey, setImageListOdyssey] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [portfolioData, setPortfolioData] = useState();
-  const themeColor = [
-    "#e2627d",
-    "#ffd7ae",
-    "#9ad9ff",
-    "#fec5e3",
-    "#9fc1ff",
-    "#74ffd6",
-    "#ff97a2",
-    "#a5d0e6",
-    "#03c4a1",
-    "#79d1e0",
-  ];
 
   const handleExpandClick = (i) => {
     setExpanded(expanded === i ? -1 : i);
@@ -131,10 +55,6 @@ const PortfolioGallery = () => {
     loadImage("taskiton");
     loadImage("odyssey");
   }, []);
-
-  const handleClick = (webSiteLink) => {
-    window.open(webSiteLink, "_blank");
-  };
 
   const loadImage = (imageName) => {
     let imgArr = [];
@@ -192,141 +112,36 @@ const PortfolioGallery = () => {
           return (
             <Grid item xs={11} sm={6} md={6} align="center" key={index}>
               <Card className={classes.root}>
-                <div
-                  className={classes.strip}
-                  style={{ backgroundColor: themeColor[index] }}
-                >
-                  <Typography
-                    gutterBottom
-                    variant="h5"
-                    component="h2"
-                    style={{
-                      textAlign: "center",
-                      fontFamily: "Bungee Inline",
-                      fontWeight: "bold",
-                    }}
-                  >
-                    {poItem.projectName}
-                  </Typography>
-                  <Typography variant="body2" component="p">
-                    {poItem.projectDetails}
-                  </Typography>
-                </div>
-                <CardContent
-                  style={
-                    poItem.features.length === 0 ||
-                    poItem.features.length === undefined
-                      ? { display: "none" }
-                      : null
-                  }
-                >
-                  <Typography
-                    variant="subtitle1"
-                    align="left"
-                    component="p"
-                    style={{ paddingLeft: "16px" }}
-                    className={classes.featureContainer}
-                  >
-                    Features;
-                  </Typography>
-                  <List component="nav" className={classes.featureContainer}>
-                    {poItem.features.length === 0 ||
-                    poItem.features.length === undefined
-                      ? null
-                      : poItem.features.map((feature) => {
-                          return (
-                            <ListItem>
-                              <ListItemIcon style={{ minWidth: "30px" }}>
-                                <FaCheckSquare color="#05386b" size="1.2em" />
-                              </ListItemIcon>
-                              <Typography className={classes.featureContainer}>
-                                {feature}
-                              </Typography>
-                            </ListItem>
-                          );
-                        })}
-                  </List>
-                </CardContent>
-                <Divider />
-                <CardActions disableSpacing className={classes.bottomCard}>
-                  {poItem.githubLink === "" ||
-                  poItem.githubLink === "" ? null : (
-                    <Button
-                      className={classes.buttonContainer}
-                      variant="contained"
-                      style={{ backgroundColor: themeColor[index] }}
-                      startIcon={<MdCode />}
-                      onClick={(event) => {
-                        handleClick(poItem.githubLink);
-                      }}
-                    >
-                      Source
-                    </Button>
-                  )}
-                  {poItem.liveDemo === "" || poItem.liveDemo === "" ? null : (
-                    <Button
-                      variant="contained"
-                      startIcon={<MdLiveTv />}
-                      className={classes.buttonContainer}
-                      style={{ color: "white" }}
-                      onClick={(event) => {
-                        handleClick(poItem.liveDemo);
-                      }}
-                    >
-                      Demo
-                    </Button>
-                  )}
-                  <div className={classes.techIconContainer}>
-                    {poItem.techIcons.map((tech, index) => {
-                      return React.createElement(tech, {
-                        className: classes.techIconStyle,
-                      });
-                    })}
-                  </div>
+                <PortfolioHeader
+                  index={index}
+                  projectName={poItem.projectName}
+                  projectDetails={poItem.projectDetails}
+                />
+                <PortfolioFeature
+                  featureLength={poItem.features.length}
+                  features={poItem.features}
+                />
 
-                  <IconButton
-                    style={{ color: "#edf5e1" }}
-                    className={clsx(classes.expand, {
-                      [classes.expandOpen]: expanded === index,
-                    })}
-                    onClick={() => handleExpandClick(index)}
-                    aria-expanded={expanded === index}
-                    aria-label="show more"
-                  >
-                    <ExpandMoreIcon style={{ color: "#05386B" }} />
-                  </IconButton>
-                </CardActions>
-                <Collapse in={expanded === index} timeout="auto" unmountOnExit>
-                  <CardContent>
-                    <div className="tag-style-project">
-                      {poItem.technologies.length === 0 ||
-                      poItem.technologies.length === undefined
-                        ? null
-                        : poItem.technologies.map((skill, index) => {
-                            return (
-                              <Chip
-                                style={{ backgroundColor: themeColor[index] }}
-                                label={skill}
-                                key={index}
-                              />
-                            );
-                          })}
-                    </div>
-                    <Typography
-                      style={{ marginTop: "1vh", color: "#05386B" }}
-                      paragraph
-                    >
-                      ScreenShots:
-                    </Typography>
-                    {poItem.projectName === "Kovan" ? (
-                      <ImageGallery imageList={imageList} />
-                    ) : poItem.projectName === "Taskiton" ? (
-                      <ImageGallery imageList={imageListTaskiton} />
-                    ) : poItem.projectName === "Odyssey" ? (
-                      <ImageGallery imageList={imageListOdeyssey} />
-                    ) : null}
-                  </CardContent>
-                </Collapse>
+                <Divider />
+                <PortfolioBottom
+                  githubLink={poItem.githubLink}
+                  index={index}
+                  liveDemoIcon={poItem.liveDemo}
+                  techIcons={poItem.techIcons}
+                  expanded={expanded}
+                  expandClickHandler={handleExpandClick}
+                />
+                <AccordionContainer
+                  expanded={expanded}
+                  index={index}
+                  key={index}
+                  technologiesLength={poItem.technologies}
+                  technologies={poItem.technologies}
+                  ProjectName={poItem.projectName}
+                  imageListKovan={imageList}
+                  imageListTaskiton={imageListTaskiton}
+                  imageListOdeyssey={imageListOdeyssey}
+                />
               </Card>
             </Grid>
           );
