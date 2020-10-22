@@ -5,7 +5,7 @@
         "location": "Vancouver, Canada",
         "technologies": ["React-Native", "NativeBase UI", "FireBase", "Node.js", "MySQL", "Expo"],
         "features": ["Expense/Budget Management", "Real-time chat app", "Kids/Elders tracking","Create/Manage events with calendar feature"],
-        "githubLink" : "https://github.com/bivt-cap/bivt-frontend",
+        "githubLink" : "https://github.com/",
         "liveDemo": ""
     },
     {   "id": 2,

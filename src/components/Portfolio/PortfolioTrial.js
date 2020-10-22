@@ -64,7 +64,7 @@ const PortfolioGallery = () => {
           imgArr.push({
             src: image.default,
             thumbnail: image.default,
-            thumbnailWidth: 250,
+            thumbnailWidth: 300,
             thumbnailHeight: 320,
           });
         });
@@ -76,8 +76,8 @@ const PortfolioGallery = () => {
           imgArr.push({
             src: image.default,
             thumbnail: image.default,
-            thumbnailWidth: 400,
-            thumbnailHeight: 200,
+            thumbnailWidth: 250,
+            thumbnailHeight: 300,
           });
         });
       }
@@ -88,7 +88,7 @@ const PortfolioGallery = () => {
           imgArr.push({
             src: image.default,
             thumbnail: image.default,
-            thumbnailWidth: 250,
+            thumbnailWidth: 300,
             thumbnailHeight: 320,
           });
         });
