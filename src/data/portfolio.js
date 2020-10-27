@@ -40,7 +40,7 @@ const portfoliosData = [
       "Create/Manage events with calendar feature",
     ],
     techIcons: [FaReact, SiRedux, SiExpo, FaNode, SiFirebase, SiMysql],
-    githubLink: "https://github.com/bivt-cap/",
+    githubLink: "https://github.com/bivt-cap/bivt-frontend",
     liveDemo: "",
   },
   {
