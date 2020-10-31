@@ -1,6 +1,6 @@
 # My Portfolio
 
-This website with React.js
+The portfolio website was created by React.js
 
 ## Getting Started
 
