@@ -6,7 +6,7 @@ import NavBar from "./components/NavBar/NavBarContainer";
 import { useDencrypt } from "use-dencrypt-effect";
 import AboutMe from "./components/About-me/AboutMe";
 import Footer from "./components/Footer/Footer";
-import PortfolioNew from "./components/Portfolio/PortfolioTrial";
+import Portfolio from "./components/Portfolio/PortfolioContainer";
 const values = ["HELLO, I'M YALCIN !"];
 const headline =
   "Software Developer | Open-Source Enthusiast | Former Enterpreneur | Have Twin Sishei";
@@ -34,12 +34,11 @@ function App() {
             <WelcomeText name={result} headLine={headline} />
           </Route>
           <Route path="/about me" component={AboutMe} />
-          <Route path="/portfolio" component={PortfolioNew} />
+          <Route path="/portfolio" component={Portfolio} />
         </Switch>
         {/* <Footer /> */}
       </div>
     </HashRouter>
   );
 }
-
 export default App;
