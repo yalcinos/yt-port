@@ -1,5 +1,5 @@
 import React from "react";
-import themeColor from "../../data/color";
+import { themeColor } from "../../data/color";
 import { Chip, CardContent, Collapse, Typography } from "@material-ui/core";
 import ImageGallery from "./ImageGallery";
 

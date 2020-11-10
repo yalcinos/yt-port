@@ -5,7 +5,7 @@ import { CardActions, Button, IconButton } from "@material-ui/core";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import { MdCode, MdLiveTv } from "react-icons/md";
 import "../../App.css";
-import themeColor from "../../data/color";
+import { themeColor } from "../../data/color";
 
 const useStyles = makeStyles((theme) => ({
   techIconStyle: {

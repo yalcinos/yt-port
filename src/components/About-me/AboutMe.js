@@ -17,25 +17,11 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import portfolioData from ".././../data/timeline.json";
 import SchoolIcon from "@material-ui/icons/School";
-import Divider from "@material-ui/core/Divider";
+import { aboutMeColor } from "../../data/color";
 import "../../App.css";
 
 const AboutMe = () => {
   const [userData, setUserData] = useState(portfolioData);
-  const themeColor = [
-    "#05386B",
-    "#ea9438",
-    "#d7385e",
-    "#000000",
-    "#de2b2b",
-    "#335d2d",
-    "#590995",
-    "#03c4a1",
-    "#726a95",
-    "#1e5f74",
-    "#ea9438",
-    "#79d1e0",
-  ];
   const EventIcons = [
     FaStudiovinari,
     SchoolIcon,
@@ -57,14 +43,17 @@ const AboutMe = () => {
           return (
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
-              contentStyle={{ background: themeColor[index], color: "#edf5e1" }}
+              contentStyle={{
+                background: aboutMeColor[index],
+                color: "#edf5e1",
+              }}
               contentArrowStyle={{
-                borderRight: `7px solid  ${themeColor[index]}`,
+                borderRight: `7px solid  ${aboutMeColor[index]}`,
               }}
               icon={React.createElement(EventIcons[index])}
               date={event.date}
               dateClassName="timeline-date-style"
-              iconStyle={{ background: themeColor[index], color: "#edf5e1" }}
+              iconStyle={{ background: aboutMeColor[index], color: "#edf5e1" }}
             >
               <h3 className="vertical-timeline-element-title">
                 {event.eventName}
