@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.e1d6a6f5.chunk.css",
-    "main.js": "/static/js/main.0f26859a.chunk.js",
-    "main.js.map": "/static/js/main.0f26859a.chunk.js.map",
+    "main.js": "/static/js/main.f306cc30.chunk.js",
+    "main.js.map": "/static/js/main.f306cc30.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.7dc3cdce.js",
     "runtime-main.js.map": "/static/js/runtime-main.7dc3cdce.js.map",
     "static/css/2.22ca87da.chunk.css": "/static/css/2.22ca87da.chunk.css",
-    "static/js/2.410eab98.chunk.js": "/static/js/2.410eab98.chunk.js",
-    "static/js/2.410eab98.chunk.js.map": "/static/js/2.410eab98.chunk.js.map",
+    "static/js/2.b84e2ccd.chunk.js": "/static/js/2.b84e2ccd.chunk.js",
+    "static/js/2.b84e2ccd.chunk.js.map": "/static/js/2.b84e2ccd.chunk.js.map",
     "static/js/3.3ce14ac6.chunk.js": "/static/js/3.3ce14ac6.chunk.js",
     "static/js/3.3ce14ac6.chunk.js.map": "/static/js/3.3ce14ac6.chunk.js.map",
     "static/js/4.7111fd81.chunk.js": "/static/js/4.7111fd81.chunk.js",
@@ -69,11 +69,11 @@
     "static/js/32.9ff8928a.chunk.js": "/static/js/32.9ff8928a.chunk.js",
     "static/js/32.9ff8928a.chunk.js.map": "/static/js/32.9ff8928a.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.d4f2b55820739503591ea99c77420ef0.js": "/precache-manifest.d4f2b55820739503591ea99c77420ef0.js",
+    "precache-manifest.fe4b1b359205a72d042d7ec8f804f6f8.js": "/precache-manifest.fe4b1b359205a72d042d7ec8f804f6f8.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.22ca87da.chunk.css.map": "/static/css/2.22ca87da.chunk.css.map",
     "static/css/main.e1d6a6f5.chunk.css.map": "/static/css/main.e1d6a6f5.chunk.css.map",
-    "static/js/2.410eab98.chunk.js.LICENSE.txt": "/static/js/2.410eab98.chunk.js.LICENSE.txt",
+    "static/js/2.b84e2ccd.chunk.js.LICENSE.txt": "/static/js/2.b84e2ccd.chunk.js.LICENSE.txt",
     "static/media/1.png": "/static/media/1.fbbe93bc.png",
     "static/media/10.png": "/static/media/10.d42b33f0.png",
     "static/media/11.png": "/static/media/11.bf2c939a.png",
@@ -90,8 +90,8 @@
   "entrypoints": [
     "static/js/runtime-main.7dc3cdce.js",
     "static/css/2.22ca87da.chunk.css",
-    "static/js/2.410eab98.chunk.js",
+    "static/js/2.b84e2ccd.chunk.js",
     "static/css/main.e1d6a6f5.chunk.css",
-    "static/js/main.0f26859a.chunk.js"
+    "static/js/main.f306cc30.chunk.js"
   ]
 }
