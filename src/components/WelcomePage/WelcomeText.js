@@ -130,7 +130,7 @@ const WelcomeText = (props) => {
             </Typist>
           </Typography>
         </Grid>
-        <Grid item xs={12} style={{position:'fixed', bottom: '10%', width: '100%'}}>
+        <Grid item xs={12}>
           <div className={classes.socialIconContainer}>
             <IconButton
               className={classes.socialIconStyle}
