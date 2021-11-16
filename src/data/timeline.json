@@ -1,12 +1,12 @@
  [
   {
     "id": 1,
-    "date": "September 2020 - Present",
-    "eventName": "Recently Graduated , YAY!",
+    "date": "January 2021 - Present",
+    "eventName": "Frontend Developer at Rival Technologies",
     "eventIcon": "",
     "eventDetails": "Lifelong learning!!",
     "location": "Vancouver, Canada",
-    "technologies": []
+    "technologies": ["React", "Redux", "Apollo", "Graphql", "Typescript", "Storybook"]
   },
   {
     "id": 2,
