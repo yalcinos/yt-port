@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
   featureContainer: {
     color: "#05386b",
     fontFamily: "Indie Flower",
-    display: 'inline-block'
+
   },
 }));
 
@@ -25,7 +25,7 @@ const PortfolioFeatures = (props) => {
       style={
         props.featureLength === 0 || props.featureLength === undefined
           ? { display: "none" }
-          : { height: "26vh" }
+          : { display: 'inline-block' }
       }
     >
       <Typography

@@ -18,6 +18,7 @@ const useStyles = makeStyles((theme) => ({
   },
   techIconContainer: {
     marginLeft: "1vw",
+    flexGrow:2,
     [theme.breakpoints.down("sm")]: {
       marginLeft: "2vw",
     },
