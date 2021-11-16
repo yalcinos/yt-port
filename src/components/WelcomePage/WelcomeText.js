@@ -40,6 +40,7 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(2),
     textAlign: "center",
     fontFamily: "Bungee Inline",
+    overflow:'hidden'
   },
 
   [theme.breakpoints.down("sm")]: {
@@ -129,7 +130,7 @@ const WelcomeText = (props) => {
             </Typist>
           </Typography>
         </Grid>
-        <Grid item xs={12}>
+        <Grid item xs={12} style={{position:'fixed', bottom: '10%', width: '100%'}}>
           <div className={classes.socialIconContainer}>
             <IconButton
               className={classes.socialIconStyle}
