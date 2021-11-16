@@ -4,15 +4,15 @@
     "date": "January 2021 - Present",
     "eventName": "Frontend Developer at Rival Technologies",
     "eventIcon": "",
-    "eventDetails": "Lifelong learning!!",
+    "eventDetails": "Lifelong learning!",
     "location": "Vancouver, Canada",
-    "technologies": ["React", "Redux", "Apollo", "Graphql", "Typescript", "Storybook"]
+    "technologies": ["React", "Redux", "Apollo", "GraphQL", "Typescript", "Storybook"]
   },
   {
     "id": 2,
     "date": "May 2019 - August 2020",
     "eventName": "Post Degree Diploma at Langara College",
-    "eventDetails": "After I worked as a DevOps engineer for almost 1 year, I left my job to pursue my career in web and mobile application program at Langara College.",
+    "eventDetails": "After I worked as a DevOps engineer for almost 1 year, I left my job to pursue my career in web and mobile application development program at Langara College.",
     "location": "Vancouver, Canada",
     "technologies": ["React.js", "Redux", "React-Native", "MySQL", "Node.js"]
   },
