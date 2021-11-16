@@ -14,6 +14,7 @@ const useStyles = makeStyles((theme) => ({
   featureContainer: {
     color: "#05386b",
     fontFamily: "Indie Flower",
+    display: 'inline-block'
   },
 }));
 
