@@ -21,15 +21,15 @@
     "id": 3,
     "date": "Jul 2018 - April 2019",
     "eventName": "Software Infrastructure Engineer at Accenture",
-    "eventDetails": "I have worked as a full-time consultant for giving support to the production servers at the biggest telecommunication company which is Turk Telekom.",
+    "eventDetails": "I worked as a full-time consultant for giving support to the production servers at the biggest telecommunication company which is Turk Telekom.",
     "location": "Istanbul, Turkey",
-    "technologies": ["Linux", "Bash Script", "RPA", "Oracle Weblogic"]
+    "technologies": ["Linux", "Bash Script", "Robotic Process Automation", "Oracle Weblogic"]
   },
   {
     "id": 10,
     "date": "September 2018 - Feb 2019",
     "eventName": "Earned Scholarship from Google",
-    "eventDetails": "I got selected top 1000 developers who got a scholarship funded by Google during a coding challenge that was presented by Udacity. The scholarship contained courses that take 6 months to complete. I learnt the Progressive Web application pattern and created a web application by applying this knowledge that I learnt from this course.",
+    "eventDetails": "I got selected top 1000 developers worldwide who got a scholarship funded by Google during a coding challenge that was presented by Udacity. The scholarship contained courses that take 6 months to complete. I learned the Progressive Web application pattern and created a web application by applying the knowledge that I learned from this course.",
     "location": "Worldwide",
     "technologies": ["JavaScript", "PWA", "Lighthouse", "Accessibility", "IndexDB", "Caching"]
   },
@@ -45,21 +45,21 @@
     "id": 5,
     "date": "July 2017 - August 2017",
     "eventName": "Bootcamp at KolayHR",
-    "eventDetails": "After I graduated, I got selected the top 7 new graduate students in the Bootcamp event in 2017. And was invited to a Bootcamp which takes 2 months.",
+    "eventDetails": "After I graduated, I got selected the top 7 new graduate students in the Bootcamp event in 2017. And I was invited to a Bootcamp which takes 2 months.",
     "location": "Istanbul, Turkey",
     "technologies": ["Angular.js", "HTML", "CSS", "PHP","Laravel"]
   },
   {
     "id": 6,
     "date": "May 2017",
-    "eventName": "Graduated From University",
-    "eventDetails": "I developed applications with Java, PHP, C#. Attented enterprenuership camp and pitch my own idea ",
+    "eventName": "Graduated From Yasar University",
+    "eventDetails": "I developed several applications with Java, PHP, C#. I also attended entrepreneurship camp and pitch my own idea and worked on my startup ideas in incubator center",
     "location": "Izmir, Turkey",
     "technologies": ["Java", "PHP", "MySQL", "GIS"]
   }, {
     "id": 7,
     "date": "Oct 2016 - May 2017",
-    "eventName": "Lead Software Developer at Startup company",
+    "eventName": "Software Developer at Startup company",
     "eventDetails": "I have worked as a lead developer for 7 months in a startup company that is in early-stage at the incubator center on our university campus.",
     "location": "Izmir, Turkey",
     "technologies": ["C#", "GIS", "GNSS"]

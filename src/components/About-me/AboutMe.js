@@ -69,7 +69,7 @@ const AboutMe = () => {
                       return (
                         <Chip
                           key={index}
-                          style={{ backgroundColor: "#edf5e1" }}
+                          style={{ backgroundColor: "#edf5e1", marginRight:'5px' }}
                           label={skill}
                         />
                       );
