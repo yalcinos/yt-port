@@ -29,7 +29,11 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   socialIconContainer: {
-    marginTop: "5vh",
+    position:'absolute',
+    left: 0,
+    right: 0,
+    bottom: 0,
+    marginBottom:'10%',
     textAlign: "center",
   },
   trial: {
@@ -123,14 +127,14 @@ const WelcomeText = (props) => {
         <Grid item xs={12}>
           <Typography variant="h5" className={classes.paper}>
             <Typist cursor={{ hideWhenDone: "false" }}>
+            <Typist.Delay ms={2800} />
               {props.headLine}
               <Typist.Backspace count={3} delay={200} />
               <span>ast</span>
             </Typist>
           </Typography>
         </Grid>
-        <Grid item xs={12}>
-          <div className={classes.socialIconContainer}>
+        <div className={classes.socialIconContainer}>
             <IconButton
               className={classes.socialIconStyle}
               onClick={(event) => {
@@ -156,7 +160,6 @@ const WelcomeText = (props) => {
               <LinkedInIcon style={{ fontSize: 50, marginRight: "10px" }} />
             </IconButton>
           </div>
-        </Grid>
       </Grid>
     </div>
   );
