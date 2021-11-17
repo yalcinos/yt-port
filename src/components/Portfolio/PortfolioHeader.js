@@ -1,7 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { themeColor } from "../../data/color";
-import { Typography, CircularProgress } from "@material-ui/core";
+import { Typography } from "@material-ui/core";
 
 import "../../App.css";
 const useStyles = makeStyles((theme) => ({

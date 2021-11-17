@@ -5,11 +5,10 @@ import WelcomeText from "./components/WelcomePage/WelcomeText";
 import NavBar from "./components/NavBar/NavBarContainer";
 import { useDencrypt } from "use-dencrypt-effect";
 import AboutMe from "./components/About-me/AboutMe";
-import Footer from "./components/Footer/Footer";
 import Portfolio from "./components/Portfolio/PortfolioContainer";
 const values = ["HELLO, I'M YALCIN !"];
 const headline =
-  "Software Developer | Open-Source Enthusiast | Former Enterpreneur | Have Twin Sishei";
+  "Software Developer | Open-Source Enthusiast | Have Twin Sishei";
 
 function App() {
   const { result, dencrypt } = useDencrypt();
@@ -23,7 +22,7 @@ function App() {
     }, 250);
 
     return () => clearInterval(action);
-  }, []);
+  }, [dencrypt]);
 
   return (
     <HashRouter>
@@ -36,7 +35,6 @@ function App() {
           <Route path="/about me" component={AboutMe} />
           <Route path="/portfolio" component={Portfolio} />
         </Switch>
-        {/* <Footer /> */}
       </div>
     </HashRouter>
   );

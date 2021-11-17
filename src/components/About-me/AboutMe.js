@@ -21,7 +21,7 @@ import { aboutMeColor } from "../../data/color";
 import "../../App.css";
 
 const AboutMe = () => {
-  const [userData, setUserData] = useState(portfolioData);
+  const [userData,] = useState(portfolioData);
   const EventIcons = [
     FaStudiovinari,
     SchoolIcon,
@@ -58,7 +58,7 @@ const AboutMe = () => {
               <h3 className="vertical-timeline-element-title">
                 {event.eventName}
               </h3>
-              <h5 className="vertical-timeline-element-subtitle">
+              <h5 className="vertical-timeline-element-subtitle" style={{marginTop:'10px'}}>
                 {event.location}
               </h5>
               <p>{event.eventDetails}</p>
