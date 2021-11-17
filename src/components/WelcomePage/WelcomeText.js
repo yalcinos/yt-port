@@ -10,7 +10,6 @@ import Particles from "react-particles-js";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    marginTop: "100px",
     color: "#05386B",
   },
   paper: {
@@ -40,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(2),
     textAlign: "center",
     fontFamily: "Bungee Inline",
-    overflow:'hidden'
+    overflow:'hidden',
   },
 
   [theme.breakpoints.down("sm")]: {
@@ -58,7 +57,7 @@ const WelcomeText = (props) => {
   return (
     <div className={classes.root}>
       <Particles
-        height="77vh"
+        height="90vh"
         style={{ position: "absolute" }}
         params={{
           particles: {
@@ -115,7 +114,7 @@ const WelcomeText = (props) => {
           },
         }}
       />
-      <Grid container>
+      <Grid container style={{paddingTop:'100px'}}>
         <Grid item xs={12}>
           <Typography variant="h1" className={classes.helloMessage}>
             {props.name}
