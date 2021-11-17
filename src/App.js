@@ -6,7 +6,7 @@ import NavBar from "./components/NavBar/NavBarContainer";
 import { useDencrypt } from "use-dencrypt-effect";
 import AboutMe from "./components/About-me/AboutMe";
 import Portfolio from "./components/Portfolio/PortfolioContainer";
-const values = ["HELLO, I'M YALCIN !"];
+const values = ["HELLO, I'M YALCIN!"];
 const headline =
   "Software Developer | Open-Source Enthusisat";
 
