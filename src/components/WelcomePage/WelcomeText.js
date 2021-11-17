@@ -125,7 +125,7 @@ const WelcomeText = (props) => {
             <Typist cursor={{ hideWhenDone: "false" }}>
               {props.headLine}
               <Typist.Backspace count={3} delay={200} />
-              <span>ter</span>
+              <span>ast</span>
             </Typist>
           </Typography>
         </Grid>

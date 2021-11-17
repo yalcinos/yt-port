@@ -8,7 +8,7 @@ import AboutMe from "./components/About-me/AboutMe";
 import Portfolio from "./components/Portfolio/PortfolioContainer";
 const values = ["HELLO, I'M YALCIN !"];
 const headline =
-  "Software Developer | Open-Source Enthusiast | Have Twin Sishei";
+  "Software Developer | Open-Source Enthusisat";
 
 function App() {
   const { result, dencrypt } = useDencrypt();
