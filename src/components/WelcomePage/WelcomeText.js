@@ -127,7 +127,7 @@ const WelcomeText = (props) => {
         <Grid item xs={12}>
           <Typography variant="h5" className={classes.paper}>
             <Typist cursor={{ hideWhenDone: "false" }}>
-            <Typist.Delay ms={2800} />
+            <Typist.Delay ms={2000} />
               {props.headLine}
               <Typist.Backspace count={3} delay={200} />
               <span>ast</span>

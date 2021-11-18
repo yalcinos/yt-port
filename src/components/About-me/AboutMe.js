@@ -7,7 +7,7 @@ import {
 import { MdCode } from "react-icons/md";
 import { GiNewBorn } from "react-icons/gi";
 import {
-  FaStudiovinari,
+  FaLaptopCode,
   FaServer,
   FaCampground,
   FaLightbulb,
@@ -23,7 +23,7 @@ import "../../App.css";
 const AboutMe = () => {
   const [userData,] = useState(portfolioData);
   const EventIcons = [
-    FaStudiovinari,
+    FaLaptopCode,
     SchoolIcon,
     FaServer,
     FaCampground,
