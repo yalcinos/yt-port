@@ -3,6 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
 import { Link } from "react-router-dom";
 import Box from "@material-ui/core/Box";
+
 const useStyles = makeStyles({
   root: {
     fontFamily: "Audiowide",
@@ -42,6 +43,7 @@ const useStyles = makeStyles({
 
 const NavBarContainer = () => {
   const classes = useStyles();
+
   return (
     <div className={classes.root}>
       <Box display="flex" flexWrap="nowrap" justifyContent="flex-end" p={1}>

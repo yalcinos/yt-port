@@ -1,9 +1,9 @@
-import { Grid, Typography, IconButton } from "@material-ui/core";
+import { Grid, Typography, IconButton, Button, Box } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import React from "react";
-import FacebookIcon from "@material-ui/icons/Facebook";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
+import GetAppIcon from '@material-ui/icons/GetApp';
 import Typist from "react-typist";
 import Particles from "react-particles-js";
 
@@ -16,6 +16,19 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(2),
     textAlign: "center",
     fontFamily: "Indie Flower",
+  },
+  downloadIcon: {
+    fontFamily: "Audiowide",
+    backgroundColor: "#05386B",
+    color: "#edf5e1",
+    "&:hover": {
+      backgroundColor: "#092d50",
+      boxShadow: "7px 10px 28px 1px rgba(0, 0, 0, 0.24)",
+    },
+    "&:active": {
+      boxShadow: "7px 6px 15px 1px rgba(0, 0, 0, 0.24)",
+      transform: "scale(0.97)",
+    },
   },
   socialIconStyle: {
     color: "#05386B",
@@ -45,7 +58,13 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Bungee Inline",
     overflow:'hidden',
   },
-
+  footer: {
+    position:"absolute",
+    textAlign:'center', 
+    bottom:0,
+    backgroundColor: 'inherit',
+    width:'100%',
+  },
   [theme.breakpoints.down("sm")]: {
     helloMessage: {
       fontSize: "4.6rem",
@@ -134,22 +153,28 @@ const WelcomeText = (props) => {
             </Typist>
           </Typography>
         </Grid>
-        <div className={classes.socialIconContainer}>
-            <IconButton
-              className={classes.socialIconStyle}
-              onClick={(event) => {
-                handleClick("https://www.facebook.com/yalcin.tatar1");
+        <Grid item xs={12} style={{textAlign: "center", marginTop: "16px"}}>
+        <Button
+              className={classes.downloadIcon}
+              variant="contained"
+              startIcon={<GetAppIcon/>}
+              onClick={(even) => {
+                handleClick("https://docs.google.com/document/d/1rr4558tewOD7VsJP2Wc2IqMkO__kfCczmmASgYosoI0/export?format=pdf")
               }}
             >
-              <FacebookIcon style={{ fontSize: 50, marginRight: "10px" }} />
-            </IconButton>
+              Resume
+          </Button>
+        </Grid>
+      
+      </Grid>
+      <Box className={classes.footer}>
             <IconButton
               className={classes.socialIconStyle}
               onClick={(event) => {
                 handleClick("https://github.com/yalcinos");
               }}
             >
-              <GitHubIcon style={{ fontSize: 50, marginRight: "10px" }} />
+              <GitHubIcon style={{ fontSize: 50, marginBottom: "10px" }} />
             </IconButton>
             <IconButton
               className={classes.socialIconStyle}
@@ -157,10 +182,9 @@ const WelcomeText = (props) => {
                 handleClick("https://www.linkedin.com/in/yalcin-tatar/");
               }}
             >
-              <LinkedInIcon style={{ fontSize: 50, marginRight: "10px" }} />
+              <LinkedInIcon style={{ fontSize: 50, marginBottom: "10px" }} />
             </IconButton>
-          </div>
-      </Grid>
+      </Box>
     </div>
   );
 };
