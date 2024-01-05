@@ -1,7 +1,15 @@
  [
   {
+    "id": 0,
+    "date": "April 2023 - Present",
+    "eventName": "Frontend Software Engineer at Commerce7 Platform",
+    "eventDetails": "Lifelong learning!",
+    "location": "Vancouver, Canada",
+    "technologies": ["React.js", "Redux", "NodeJS", "Storybook", "Jest", "styled-component", "Cypress", "Open AI", "Prompt Engineering"]
+  },
+  {
     "id": 1,
-    "date": "January 2021 - Present",
+    "date": "January 2021 - April 2023",
     "eventName": "Frontend Software Engineer at Rival Technologies",
     "eventDetails": "Lifelong learning!",
     "location": "Vancouver, Canada",

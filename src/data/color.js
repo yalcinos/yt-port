@@ -11,6 +11,7 @@ export const themeColor = [
   "#79d1e0",
 ];
 export const aboutMeColor = [
+  "#335d2d",
   "#05386B",
   "#ea9438",
   "#d7385e",

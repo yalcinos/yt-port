@@ -1,5 +1,5 @@
 import { Chip } from "@material-ui/core";
-import React, { useState } from "react";
+import React from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -21,8 +21,10 @@ import { aboutMeColor } from "../../data/color";
 import "../../App.css";
 
 const AboutMe = () => {
-  const [userData,] = useState(portfolioData);
+  const timelineData = portfolioData;
+
   const EventIcons = [
+    FaLaptopCode,
     FaLaptopCode,
     SchoolIcon,
     FaServer,
@@ -39,7 +41,7 @@ const AboutMe = () => {
   return (
     <div>
       <VerticalTimeline>
-        {userData.map((event, index) => {
+        {timelineData.map((event, index) => {
           return (
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
@@ -58,7 +60,10 @@ const AboutMe = () => {
               <h3 className="vertical-timeline-element-title">
                 {event.eventName}
               </h3>
-              <h5 className="vertical-timeline-element-subtitle" style={{marginTop:'10px'}}>
+              <h5
+                className="vertical-timeline-element-subtitle"
+                style={{ marginTop: "10px" }}
+              >
                 {event.location}
               </h5>
               <p>{event.eventDetails}</p>
@@ -69,7 +74,10 @@ const AboutMe = () => {
                       return (
                         <Chip
                           key={index}
-                          style={{ backgroundColor: "#edf5e1", marginRight:'5px' }}
+                          style={{
+                            backgroundColor: "#edf5e1",
+                            marginRight: "5px",
+                          }}
                           label={skill}
                         />
                       );
