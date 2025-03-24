@@ -1,16 +1,27 @@
  [
+
   {
     "id": 0,
     "date": "April 2023 - Present",
-    "eventName": "Frontend Software Engineer at Commerce7 Platform",
-    "eventDetails": "Lifelong learning!",
+    "eventName": "Frontend Engineer at Commerce7 Platform",
+    "eventDetails": "Lifelong learning!",    "link": "https://navigopro.com",
     "location": "Vancouver, Canada",
     "technologies": ["React.js", "Redux", "NodeJS", "Storybook", "Jest", "styled-component", "Cypress", "Open AI", "Prompt Engineering"]
   },
   {
+    "id": 8,
+    "date": "January 2025 - Present",
+    "hasLink": true,
+    "link": "https://navigopro.com",
+    "eventName": "Founder of NaviGo",
+    "eventDetails": "Navigo is an accessibility widget that helps website makes more accessible for visually impaired people.",
+    "location": "Vancouver, Canada",
+    "technologies": ["React.js","Node.js","Strpe","Typescript","Wasp","TailwindCSS","PostgreSQL"]
+  },
+  {
     "id": 1,
     "date": "January 2021 - April 2023",
-    "eventName": "Frontend Software Engineer at Rival Technologies",
+    "eventName": "Frontend Engineer at Rival Technologies",
     "eventDetails": "Lifelong learning!",
     "location": "Vancouver, Canada",
     "technologies": ["Typescript","React", "Redux", "Apollo", "GraphQL", "NodeJS", "Storybook", "Jest", "MaterialUI"]

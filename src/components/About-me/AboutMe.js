@@ -13,6 +13,8 @@ import {
   FaLightbulb,
   FaUniversity,
   FaUserGraduate,
+  FaRocket,
+  FaExternalLinkAlt,
 } from "react-icons/fa";
 import "react-vertical-timeline-component/style.min.css";
 import portfolioData from "../../data/timeline.json";
@@ -25,6 +27,7 @@ const AboutMe = () => {
 
   const EventIcons = [
     FaLaptopCode,
+    FaRocket,
     FaLaptopCode,
     SchoolIcon,
     FaServer,
@@ -66,6 +69,24 @@ const AboutMe = () => {
               >
                 {event.location}
               </h5>
+              {event.hasLink && (
+                <a
+                  href={event.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    color: "#edf5e1",
+                    display: "flex",
+                    alignItems: "center",
+                    textDecoration: "none",
+                    marginTop: "10px",
+                    marginBottom: "10px",
+                  }}
+                >
+                  <FaExternalLinkAlt style={{ marginRight: "8px" }} />
+                  <span>https://navigopro.com</span>
+                </a>
+              )}
               <p>{event.eventDetails}</p>
               <div className="tag-style">
                 {event.technologies.length === 0

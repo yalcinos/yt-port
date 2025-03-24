@@ -24,4 +24,5 @@ export const aboutMeColor = [
   "#1e5f74",
   "#ea9438",
   "#79d1e0",
+  "#424242",
 ];
